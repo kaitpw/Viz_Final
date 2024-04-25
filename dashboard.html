@@ -10,18 +10,9 @@ body, button{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 14px;
     font-family: Monaco, monospace;
-
+    font-size: 14px;
 }
-
-.h1, .h2, .p {
-  padding: .75em 1em;
-  margin: 1.5em .75em;
-  background-color: #e0e0e0;
-}
-.h1{font-size: 28px; font-weight: bolder;}
-.h2{font-size: 24px; font-weight: bolder; margin-top: 3em;}
 
 .container {
   margin:auto;
@@ -33,6 +24,20 @@ body, button{
   align-items: center;
 }
 
+.h1, .h2, .h3, .p, .c{
+  font-family: Monaco, monospace;
+  padding: .75em 1em;
+  margin: 1.5em .75em;
+  background-color: #e0e0e0;
+}
+.h1{font-size: 28px; text-align: center; font-weight: bolder;}
+.h2{font-size: 24px; text-align: center; font-weight: bolder; margin-top: 3em;}
+.h3{font-size: 20px; text-align: center; font-weight: bolder; margin: 0;}
+.p2{font-size: 14px; text-align: left;}
+.c {font-size: 14px; text-align: center;}
+.c-inline {font-size: 14px; text-align: center; margin: 1em;}
+
+
 #viz0 {
   display: flex; 
   flex: 1 1; 
@@ -41,6 +46,21 @@ body, button{
   margin: 1.5em .75em;
   background-color: #e0e0e0;
   margin-bottom: 5em;
+}
+
+#viz2 {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  margin: 2em 25px 2em 0;
+}
+
+#viz5_0 {
+  margin-right: 50px;
+}
+
+#viz6_0 {
+  margin: 2em 25px 2em 0;
 }
 
 #toggle {
@@ -89,53 +109,70 @@ body, button{
       How can we predict the energy usage of a home?
     </div>
     <div class="p">
-      Understanding anthropogenic carbon emissions is essential for fostering global sustainability. A detailed grasp of emissions and their sources can empower targeted and impactful remediation efforts. In the United States, residential buildings, considered at every stage of their lifecycle, account for 20% of the nation's annual emissions. Of that, operational emissions constitute a much larger share than embodied emissions. 
+      Understanding anthropogenic carbon emissions is essential for fostering global sustainability. A detailed grasp of emissions and their sources can empower targeted and impactful remediation efforts. In the United States, the operational activities of residential buildings account for ~15% of the nation's annual emissions. 
     </div>
     <div class="p">
       To understand residential operational emissions, we'll begin by getting a generally understanding what those emissions look like. The Residential Energy Consumption Survey (RECS), a nationally representative survey of home energy consumption, was chosen for this. 
     </div>
-    <div id="viz0" style="margin-bottom: 5em;">
-      <div style="display:flex; flex-direction: column;"><div style="margin-top: 1em;text-align: center; font-size: 20px; font-weight: bolder;">Energy Across All End-Uses</div><img id="viz01" src="viz01.png" height="400px"><p>Only HVAC/water related end-uses are 5%+</p></div>
-      <div style="display:flex; flex-direction: column;"><div style="margin-top: 1em;text-align: center; font-size: 20px; font-weight: bolder;">Energy Across Categories</div><img id="viz01" src="viz02.png" height="400px"><p>Grouping, we get something more palatable</p></div>
+    <div id="viz0">
+      <div style="display:flex; flex-direction: column;">
+        <div class="h3" style="padding-bottom: 0;">Energy Across All End-Uses</div>
+        <img id="viz01" src="viz0_1.png" height="400px">
+        <div class="c-inline">Only HVAC/water related end-uses make up 5%+ of national energy consumption</div>
+      </div>
+      <div style="display:flex; flex-direction: column;">
+        <div class="h3" style="padding-bottom: 0;">Energy Across Categories</div>
+        <img id="viz01" src="viz0_2.png" height="400px">
+        <div class="c-inline">Grouping end-uses by this observation we get something more palatable</div>
+      </div>
     </div>
 
     <div class="h2">Exploring Energy Per Household Per State</div>
     <div class="p">
       Taking a look at the distribution of energy consumption among every state, we can see that Northern regions have noticeably higher consumption. Mean consumption across the entire US is ~23500 kWh.
     </div>
-    <div id="viz1"></div>
-    <div class="p" style="margin-top: 0;">
+    <div id="viz1_0"></div>
+
+    <div class="p">
       Recalling HVAC's substantial share of total consumption, we can map HVAC consumption and weather, its driving factor, to reveal the strong relationship between the three.
     </div>
 
-    <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 2em 25px 2em 0;">
+    <div id="viz2">
       <div style="display: flex; flex-direction: column;">
-        <div id="viz21"></div>
-        <div id="viz22"></div>
+        <div id="viz2_1"></div>
+        <div id="viz2_2"></div>
       </div>
       <div style="display: flex; flex-direction: column;">
-        <div id="viz31"></div>
-        <div id="viz32"></div>
+        <div id="viz3_1"></div>
+        <div id="viz3_2"></div>
       </div>
     </div>
+
     <button type="button" id="toggle">Toggle Grayscale</button>
+
     <div class="p">
       With this relationship in mind, we can plot Heating Degree Days (HDD) and Cooling Degree Days (CDD) against national energy consumption to find the correlation between them. The size of each bubble represents that state's share of national energy use.
     </div>
-    <div id="viz5" style="margin-right: 50px;"></div>
+
+    <div id="viz5_0"></div>
+
     <div class="p">
       Viewed through another lens, we can see the relationship between the proportion of heating/cooling energy to total energy more clearly. Here size, represents the same as above.
     </div>
-    <img id="viz4" src="viz4.png" width="1000px">
+
+    <img id="viz4_0" src="viz4_0.png" width="1000px">
 
     <div class="h2" style="margin-top: 2em;">Predicting Energy</div>
+
     <div class="p">
       With correlation coefficients both above .7, HDD and CDD seem like promising predictive variables but more would never hurt. However, it's important to remember that above correlations are taken at the state level, that is, between the average HDD/CDD (for that state) and average kWh consumption (for that state). 
     </div>
+
     <div class="p">
-      Though state-level information is necessary for policy, remediation efforts in the built environment are most impactful at the individual-house level. Taking this into account, conducting feature selection with all features in the RECS and consumption gives us a bleaker picture for our hopes of predicting energy consumption.
+      Though state-level information is necessary for policy, emission remediation efforts in the built environment ultimately start at the individual-house level. Taking this into account, conducting feature selection with all features in the RECS and consumption gives us a bleaker picture for our hopes of predicting energy consumption.
     </div>
-<table id= "viz60" class="dataframe">
+
+<table class="dataframe">
   <colgroup>
     <col style="width: 49%;">
     <col style="width: 17%;">
@@ -263,10 +300,10 @@ body, button{
 </table>
 
 <div class="p">
-  Interestingly, unlike the data at the state level, data at the individual level doesn't seem to exhibit the same strength of relationship between weather and energy consumption.
+  Unlike the data at the state level, data at the individual level doesn't seem to exhibit the same strength of relationship between weather and energy consumption.
 </div>
 
-<table id="viz70" class="dataframe">
+<table class="dataframe">
   <colgroup>
     <col style="width: 49%;">
     <col style="width: 17%;">
@@ -316,24 +353,24 @@ body, button{
 </table>
 
 <div class="p">
-  We can see that when disaggregated, the relationships are not quite as strong, but they are certainly still present. Because most of the selected features are binary or categorical, they don't make for photogenic visualizations, with the exception of square footage. Naturally, square footage is also closely related to home type.
+  We can see that when disaggregated, the relationships are not quite as strong. Looking at the selected features however, many of them exhibit some relation to home size. With this in mind, we can plot the square footage of US homes, which is naturally also related to home type. To get a better picture of what energy consumption looks like across all home typologies, we'll replicate this plot, but this time color encoded by whether a home was all electric or not.
 </div>
 
-<div id="viz80" style="margin: 2em 25px 2em 0;"></div>
+<div id="viz6_0"></div>
 
 <div class="p">
-  With such general information about a home, predictions models are unlikely to be practically useful. However, there are still insights within the data. One in particular is its substantiation of a key argument for electrification movement: electric homes use less energy.
+  Despite making a pretty graph, square footage still only has a correlation coefficient of .53. It seems that with such general information about a home, such as that included in the RECS, predictions models are unlikely to be practically useful for anything but loose estimation. Fortunately though, there are still insights within the data. One in particular is its substantiation of a key argument for electrification movement: electric homes use less energy.
 </div>
 
-<div class="h2" style="margin-top: 5em;"
->The Potential of Electrification
+<div class="h2" style="margin-top: 5em;">
+  The Potential of Electrification
 </div>
 
 <div class="p">
-  To wrap up, one last chart shows the remarkable potential of electrification: a <strong>38%</strong> reduction in energy consumption, bringing the current mean of ~23500 kWh to an electrified mean of ~14500. 
+  To wrap up, one last chart shows the remarkable potential of electrification: a <strong>38%</strong> reduction in energy consumption (from electrifying space heating alone!), bringing the current mean of ~23500 kWh to an electrified mean of ~14500. 
 </div>
 
-<div id="viz90"></div>
+<div id="viz7_0"></div>
 
 <div class="p" style="margin: 5em 0 15em 0;">
   By: Kai Pang-Whitsett
@@ -387,27 +424,27 @@ body, button{
   
     // Mapping of div IDs to schema files
     const mappings = {
-      '#viz1': 'viz10.json',
-      '#viz21': 'viz21.json',
-      '#viz22': 'viz22.json',
-      '#viz31': 'viz31.json',
-      '#viz32': 'viz32.json',
-      '#viz5': 'viz50.json',
-      '#viz80': 'viz80.json',
-      '#viz90': 'viz90.json'
+      '#viz1_0': 'viz1_0.json',
+      '#viz2_1': 'viz2_1.json',
+      '#viz2_2': 'viz2_2.json',
+      '#viz3_1': 'viz3_1.json',
+      '#viz3_2': 'viz3_2.json',
+      '#viz5_0': 'viz5_0.json',
+      '#viz6_0': 'viz6_0.json',
+      '#viz7_0': 'viz7_0.json'
 
       // '#viz00': '.json'
     };
     const choro = choroGenerator(mappings);
 
-    choro('#viz1');
-    choro('#viz21');
-    choro('#viz22');
-    choro('#viz31');
-    choro('#viz32');
-    choro('#viz5');
-    choro('#viz80');
-    choro('#viz90');
+    choro('#viz1_0');
+    choro('#viz2_1');
+    choro('#viz2_2');
+    choro('#viz3_1');
+    choro('#viz3_2');
+    choro('#viz5_0');
+    choro('#viz6_0');
+    choro('#viz7_0');
 
 
 
@@ -417,18 +454,18 @@ body, button{
   
     // event handling
     greyscale = false
-    const chartIds = ['#viz1', '#viz21', '#viz22', '#viz31', '#viz32'];
+    const chartIds = ['#viz1_0', '#viz2_1', '#viz2_2', '#viz3_1', '#viz3_2'];
     const colorSchemeButton = document.getElementById('toggle');
     colorSchemeButton.addEventListener('click', () => {
       if (greyscale == false) {
         changeColorScheme(chartIds, 'mygrey');
         greyscale = true
       } else {
-        choro('#viz1');
-        choro('#viz21');
-        choro('#viz22');
-        choro('#viz31');
-        choro('#viz32');
+        choro('#viz1_0');
+        choro('#viz2_1');
+        choro('#viz2_2');
+        choro('#viz3_1');
+        choro('#viz3_2');
         greyscale = false
       }
     });
