@@ -1,0 +1,894 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "data": [
+      {"name": "param_11_store"},
+      {
+        "name": "source_0",
+        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json",
+        "format": {"type": "topojson", "feature": "states"}
+      },
+      {
+        "name": "source_1",
+        "values": [
+          {
+            "state_name": "Alabama",
+            "TOTAL": 19428.761906366726,
+            "REDUCTION": 0.2811995445807304,
+            "STATE_FIPS": 1
+          },
+          {
+            "state_name": "Alaska",
+            "TOTAL": 30495.05439625027,
+            "REDUCTION": 1.153412284000452,
+            "STATE_FIPS": 2
+          },
+          {
+            "state_name": "Arizona",
+            "TOTAL": 18186.395430649714,
+            "REDUCTION": 0.19310244793893935,
+            "STATE_FIPS": 4
+          },
+          {
+            "state_name": "Arkansas",
+            "TOTAL": 22072.64058596591,
+            "REDUCTION": 0.3790014901863513,
+            "STATE_FIPS": 5
+          },
+          {
+            "state_name": "California",
+            "TOTAL": 15932.248119173573,
+            "REDUCTION": 0.29189205585542327,
+            "STATE_FIPS": 6
+          },
+          {
+            "state_name": "Colorado",
+            "TOTAL": 24661.758523223874,
+            "REDUCTION": 0.7032288046148362,
+            "STATE_FIPS": 8
+          },
+          {
+            "state_name": "Connecticut",
+            "TOTAL": 25381.907042531533,
+            "REDUCTION": 0.6803137072655553,
+            "STATE_FIPS": 9
+          },
+          {
+            "state_name": "Delaware",
+            "TOTAL": 21166.260616913532,
+            "REDUCTION": 0.5028596008651458,
+            "STATE_FIPS": 10
+          },
+          {
+            "state_name": "District of Columbia",
+            "TOTAL": 13916.81517438728,
+            "REDUCTION": 0.7726488525048375,
+            "STATE_FIPS": 11
+          },
+          {
+            "state_name": "Florida",
+            "TOTAL": 14682.517626740939,
+            "REDUCTION": 0.07294866869066448,
+            "STATE_FIPS": 12
+          },
+          {
+            "state_name": "Georgia",
+            "TOTAL": 21099.590045480247,
+            "REDUCTION": 0.2775138963862145,
+            "STATE_FIPS": 13
+          },
+          {
+            "state_name": "Hawaii",
+            "TOTAL": 8886.239186171777,
+            "REDUCTION": 0.0020655787765205937,
+            "STATE_FIPS": 15
+          },
+          {
+            "state_name": "Idaho",
+            "TOTAL": 25838.50343419687,
+            "REDUCTION": 0.6285802859216202,
+            "STATE_FIPS": 16
+          },
+          {
+            "state_name": "Illinois",
+            "TOTAL": 27462.391967762604,
+            "REDUCTION": 0.6482829960374802,
+            "STATE_FIPS": 17
+          },
+          {
+            "state_name": "Indiana",
+            "TOTAL": 26739.77812381945,
+            "REDUCTION": 0.4990642072279618,
+            "STATE_FIPS": 18
+          },
+          {
+            "state_name": "Iowa",
+            "TOTAL": 28614.780032946535,
+            "REDUCTION": 0.5768697713271062,
+            "STATE_FIPS": 19
+          },
+          {
+            "state_name": "Kansas",
+            "TOTAL": 26448.26264066129,
+            "REDUCTION": 0.4697454074980365,
+            "STATE_FIPS": 20
+          },
+          {
+            "state_name": "Kentucky",
+            "TOTAL": 22006.739408303667,
+            "REDUCTION": 0.5103698077516062,
+            "STATE_FIPS": 21
+          },
+          {
+            "state_name": "Louisiana",
+            "TOTAL": 19439.348859786893,
+            "REDUCTION": 0.16660455638226282,
+            "STATE_FIPS": 22
+          },
+          {
+            "state_name": "Maine",
+            "TOTAL": 28463.040183455527,
+            "REDUCTION": 0.7366776882406681,
+            "STATE_FIPS": 23
+          },
+          {
+            "state_name": "Maryland",
+            "TOTAL": 21682.33425210077,
+            "REDUCTION": 0.5194415517531351,
+            "STATE_FIPS": 24
+          },
+          {
+            "state_name": "Massachusetts",
+            "TOTAL": 25118.464389984583,
+            "REDUCTION": 0.7000184392455301,
+            "STATE_FIPS": 25
+          },
+          {
+            "state_name": "Michigan",
+            "TOTAL": 30930.116845565186,
+            "REDUCTION": 0.5884213277410053,
+            "STATE_FIPS": 26
+          },
+          {
+            "state_name": "Minnesota",
+            "TOTAL": 28710.55061592635,
+            "REDUCTION": 0.811737987835088,
+            "STATE_FIPS": 27
+          },
+          {
+            "state_name": "Mississippi",
+            "TOTAL": 20767.570257978943,
+            "REDUCTION": 0.23408572319830534,
+            "STATE_FIPS": 28
+          },
+          {
+            "state_name": "Missouri",
+            "TOTAL": 25406.304965397936,
+            "REDUCTION": 0.49018473161312714,
+            "STATE_FIPS": 29
+          },
+          {
+            "state_name": "Montana",
+            "TOTAL": 25531.895418087726,
+            "REDUCTION": 0.804697436179162,
+            "STATE_FIPS": 30
+          },
+          {
+            "state_name": "Nebraska",
+            "TOTAL": 25530.93947024632,
+            "REDUCTION": 0.6512602632166195,
+            "STATE_FIPS": 31
+          },
+          {
+            "state_name": "Nevada",
+            "TOTAL": 22041.721102378662,
+            "REDUCTION": 0.3545360464212453,
+            "STATE_FIPS": 32
+          },
+          {
+            "state_name": "New Hampshire",
+            "TOTAL": 27446.855584782174,
+            "REDUCTION": 0.7367196809140647,
+            "STATE_FIPS": 33
+          },
+          {
+            "state_name": "New Jersey",
+            "TOTAL": 26469.38400496332,
+            "REDUCTION": 0.5729123150010484,
+            "STATE_FIPS": 34
+          },
+          {
+            "state_name": "New Mexico",
+            "TOTAL": 23223.81138807018,
+            "REDUCTION": 0.4529624281974493,
+            "STATE_FIPS": 35
+          },
+          {
+            "state_name": "New York",
+            "TOTAL": 22527.272569943118,
+            "REDUCTION": 0.6871485548119904,
+            "STATE_FIPS": 36
+          },
+          {
+            "state_name": "North Carolina",
+            "TOTAL": 18498.47655314092,
+            "REDUCTION": 0.41553885340341445,
+            "STATE_FIPS": 37
+          },
+          {
+            "state_name": "North Dakota",
+            "TOTAL": 25252.977681792174,
+            "REDUCTION": 1.2632824668240052,
+            "STATE_FIPS": 38
+          },
+          {
+            "state_name": "Ohio",
+            "TOTAL": 26777.53467742609,
+            "REDUCTION": 0.5317994668037567,
+            "STATE_FIPS": 39
+          },
+          {
+            "state_name": "Oklahoma",
+            "TOTAL": 24206.093775754005,
+            "REDUCTION": 0.3754022179706367,
+            "STATE_FIPS": 40
+          },
+          {
+            "state_name": "Oregon",
+            "TOTAL": 21175.81006075573,
+            "REDUCTION": 0.6785504963658254,
+            "STATE_FIPS": 41
+          },
+          {
+            "state_name": "Pennsylvania",
+            "TOTAL": 25654.579036113344,
+            "REDUCTION": 0.5879702148295103,
+            "STATE_FIPS": 42
+          },
+          {
+            "state_name": "Rhode Island",
+            "TOTAL": 27320.447851781624,
+            "REDUCTION": 0.5816777014599661,
+            "STATE_FIPS": 44
+          },
+          {
+            "state_name": "South Carolina",
+            "TOTAL": 18123.904394045818,
+            "REDUCTION": 0.31017004775064816,
+            "STATE_FIPS": 45
+          },
+          {
+            "state_name": "South Dakota",
+            "TOTAL": 25357.255909121588,
+            "REDUCTION": 0.8233444141068669,
+            "STATE_FIPS": 46
+          },
+          {
+            "state_name": "Tennessee",
+            "TOTAL": 20209.5888919408,
+            "REDUCTION": 0.45269656775485567,
+            "STATE_FIPS": 47
+          },
+          {
+            "state_name": "Texas",
+            "TOTAL": 18889.28115723356,
+            "REDUCTION": 0.21461751906423432,
+            "STATE_FIPS": 48
+          },
+          {
+            "state_name": "Utah",
+            "TOTAL": 26253.31914084277,
+            "REDUCTION": 0.5410491352357242,
+            "STATE_FIPS": 49
+          },
+          {
+            "state_name": "Vermont",
+            "TOTAL": 28781.227573958164,
+            "REDUCTION": 0.7014007252488769,
+            "STATE_FIPS": 50
+          },
+          {
+            "state_name": "Virginia",
+            "TOTAL": 21873.07203937268,
+            "REDUCTION": 0.482592591879523,
+            "STATE_FIPS": 51
+          },
+          {
+            "state_name": "Washington",
+            "TOTAL": 20273.056185230616,
+            "REDUCTION": 0.7937547731715316,
+            "STATE_FIPS": 53
+          },
+          {
+            "state_name": "West Virginia",
+            "TOTAL": 24154.19974294381,
+            "REDUCTION": 0.550644416262152,
+            "STATE_FIPS": 54
+          },
+          {
+            "state_name": "Wisconsin",
+            "TOTAL": 27028.585611895145,
+            "REDUCTION": 0.8131903324618579,
+            "STATE_FIPS": 55
+          },
+          {
+            "state_name": "Wyoming",
+            "TOTAL": 26153.970632881097,
+            "REDUCTION": 0.8488398208709511,
+            "STATE_FIPS": 56
+          }
+        ]
+      },
+      {
+        "name": "source_2",
+        "values": [
+          {
+            "state_name": "Alabama",
+            "ELECTRIFIED": 15377.76849521844,
+            "REDUCTION": 0.2811995445807304,
+            "STATE_FIPS": 1
+          },
+          {
+            "state_name": "Alaska",
+            "ELECTRIFIED": 9656.554738584715,
+            "REDUCTION": 1.153412284000452,
+            "STATE_FIPS": 2
+          },
+          {
+            "state_name": "Arizona",
+            "ELECTRIFIED": 15489.89704674643,
+            "REDUCTION": 0.19310244793893935,
+            "STATE_FIPS": 4
+          },
+          {
+            "state_name": "Arkansas",
+            "ELECTRIFIED": 15993.667847814897,
+            "REDUCTION": 0.3790014901863513,
+            "STATE_FIPS": 5
+          },
+          {
+            "state_name": "California",
+            "ELECTRIFIED": 12752.258217744558,
+            "REDUCTION": 0.29189205585542327,
+            "STATE_FIPS": 6
+          },
+          {
+            "state_name": "Colorado",
+            "ELECTRIFIED": 13524.908307397804,
+            "REDUCTION": 0.7032288046148362,
+            "STATE_FIPS": 8
+          },
+          {
+            "state_name": "Connecticut",
+            "ELECTRIFIED": 15398.704931199016,
+            "REDUCTION": 0.6803137072655553,
+            "STATE_FIPS": 9
+          },
+          {
+            "state_name": "Delaware",
+            "ELECTRIFIED": 13356.021860214834,
+            "REDUCTION": 0.5028596008651458,
+            "STATE_FIPS": 10
+          },
+          {
+            "state_name": "District of Columbia",
+            "ELECTRIFIED": 6914.438142522238,
+            "REDUCTION": 0.7726488525048375,
+            "STATE_FIPS": 11
+          },
+          {
+            "state_name": "Florida",
+            "ELECTRIFIED": 13902.236129675108,
+            "REDUCTION": 0.07294866869066448,
+            "STATE_FIPS": 12
+          },
+          {
+            "state_name": "Georgia",
+            "ELECTRIFIED": 16744.838708022904,
+            "REDUCTION": 0.2775138963862145,
+            "STATE_FIPS": 13
+          },
+          {
+            "state_name": "Hawaii",
+            "ELECTRIFIED": 8873.25459084963,
+            "REDUCTION": 0.0020655787765205937,
+            "STATE_FIPS": 15
+          },
+          {
+            "state_name": "Idaho",
+            "ELECTRIFIED": 14188.618616173017,
+            "REDUCTION": 0.6285802859216202,
+            "STATE_FIPS": 16
+          },
+          {
+            "state_name": "Illinois",
+            "ELECTRIFIED": 16704.669570704034,
+            "REDUCTION": 0.6482829960374802,
+            "STATE_FIPS": 17
+          },
+          {
+            "state_name": "Indiana",
+            "ELECTRIFIED": 16772.37655141607,
+            "REDUCTION": 0.4990642072279618,
+            "STATE_FIPS": 18
+          },
+          {
+            "state_name": "Iowa",
+            "ELECTRIFIED": 16039.66723013575,
+            "REDUCTION": 0.5768697713271062,
+            "STATE_FIPS": 19
+          },
+          {
+            "state_name": "Kansas",
+            "ELECTRIFIED": 17375.040009818542,
+            "REDUCTION": 0.4697454074980365,
+            "STATE_FIPS": 20
+          },
+          {
+            "state_name": "Kentucky",
+            "ELECTRIFIED": 14126.447497574101,
+            "REDUCTION": 0.5103698077516062,
+            "STATE_FIPS": 21
+          },
+          {
+            "state_name": "Louisiana",
+            "ELECTRIFIED": 17084.98890760117,
+            "REDUCTION": 0.16660455638226282,
+            "STATE_FIPS": 22
+          },
+          {
+            "state_name": "Maine",
+            "ELECTRIFIED": 14887.674081155183,
+            "REDUCTION": 0.7366776882406681,
+            "STATE_FIPS": 23
+          },
+          {
+            "state_name": "Maryland",
+            "ELECTRIFIED": 14049.549223665763,
+            "REDUCTION": 0.5194415517531351,
+            "STATE_FIPS": 24
+          },
+          {
+            "state_name": "Massachusetts",
+            "ELECTRIFIED": 14299.49812701381,
+            "REDUCTION": 0.7000184392455301,
+            "STATE_FIPS": 25
+          },
+          {
+            "state_name": "Michigan",
+            "ELECTRIFIED": 18687.952655152003,
+            "REDUCTION": 0.5884213277410053,
+            "STATE_FIPS": 26
+          },
+          {
+            "state_name": "Minnesota",
+            "ELECTRIFIED": 13802.328877404425,
+            "REDUCTION": 0.811737987835088,
+            "STATE_FIPS": 27
+          },
+          {
+            "state_name": "Mississippi",
+            "ELECTRIFIED": 17138.880450246983,
+            "REDUCTION": 0.23408572319830534,
+            "STATE_FIPS": 28
+          },
+          {
+            "state_name": "Missouri",
+            "ELECTRIFIED": 16708.198271583587,
+            "REDUCTION": 0.49018473161312714,
+            "STATE_FIPS": 29
+          },
+          {
+            "state_name": "Montana",
+            "ELECTRIFIED": 11483.596284900199,
+            "REDUCTION": 0.804697436179162,
+            "STATE_FIPS": 30
+          },
+          {
+            "state_name": "Nebraska",
+            "ELECTRIFIED": 13873.52761904737,
+            "REDUCTION": 0.6512602632166195,
+            "STATE_FIPS": 31
+          },
+          {
+            "state_name": "Nevada",
+            "ELECTRIFIED": 16523.13440927296,
+            "REDUCTION": 0.3545360464212453,
+            "STATE_FIPS": 32
+          },
+          {
+            "state_name": "New Hampshire",
+            "ELECTRIFIED": 14853.62089534219,
+            "REDUCTION": 0.7367196809140647,
+            "STATE_FIPS": 33
+          },
+          {
+            "state_name": "New Jersey",
+            "ELECTRIFIED": 17779.218134269977,
+            "REDUCTION": 0.5729123150010484,
+            "STATE_FIPS": 34
+          },
+          {
+            "state_name": "New Mexico",
+            "ELECTRIFIED": 15329.748090402527,
+            "REDUCTION": 0.4529624281974493,
+            "STATE_FIPS": 35
+          },
+          {
+            "state_name": "New York",
+            "ELECTRIFIED": 12691.688057632009,
+            "REDUCTION": 0.6871485548119904,
+            "STATE_FIPS": 36
+          },
+          {
+            "state_name": "North Carolina",
+            "ELECTRIFIED": 13018.454098029035,
+            "REDUCTION": 0.41553885340341445,
+            "STATE_FIPS": 37
+          },
+          {
+            "state_name": "North Dakota",
+            "ELECTRIFIED": 8690.881354821018,
+            "REDUCTION": 1.2632824668240052,
+            "STATE_FIPS": 38
+          },
+          {
+            "state_name": "Ohio",
+            "ELECTRIFIED": 16712.464287127423,
+            "REDUCTION": 0.5317994668037567,
+            "STATE_FIPS": 39
+          },
+          {
+            "state_name": "Oklahoma",
+            "ELECTRIFIED": 17909.650203636713,
+            "REDUCTION": 0.3754022179706367,
+            "STATE_FIPS": 40
+          },
+          {
+            "state_name": "Oregon",
+            "ELECTRIFIED": 12260.431052102354,
+            "REDUCTION": 0.6785504963658254,
+            "STATE_FIPS": 41
+          },
+          {
+            "state_name": "Pennsylvania",
+            "ELECTRIFIED": 15767.93687820277,
+            "REDUCTION": 0.5879702148295103,
+            "STATE_FIPS": 42
+          },
+          {
+            "state_name": "Rhode Island",
+            "ELECTRIFIED": 17144.348808396087,
+            "REDUCTION": 0.5816777014599661,
+            "STATE_FIPS": 44
+          },
+          {
+            "state_name": "South Carolina",
+            "ELECTRIFIED": 13974.286606398733,
+            "REDUCTION": 0.31017004775064816,
+            "STATE_FIPS": 45
+          },
+          {
+            "state_name": "South Dakota",
+            "ELECTRIFIED": 11446.535080987642,
+            "REDUCTION": 0.8233444141068669,
+            "STATE_FIPS": 46
+          },
+          {
+            "state_name": "Tennessee",
+            "ELECTRIFIED": 13715.339138920763,
+            "REDUCTION": 0.45269656775485567,
+            "STATE_FIPS": 47
+          },
+          {
+            "state_name": "Texas",
+            "ELECTRIFIED": 15962.87436533441,
+            "REDUCTION": 0.21461751906423432,
+            "STATE_FIPS": 48
+          },
+          {
+            "state_name": "Utah",
+            "ELECTRIFIED": 15858.532145172569,
+            "REDUCTION": 0.5410491352357242,
+            "STATE_FIPS": 49
+          },
+          {
+            "state_name": "Vermont",
+            "ELECTRIFIED": 14785.519806398033,
+            "REDUCTION": 0.7014007252488769,
+            "STATE_FIPS": 50
+          },
+          {
+            "state_name": "Virginia",
+            "ELECTRIFIED": 14892.712884766566,
+            "REDUCTION": 0.482592591879523,
+            "STATE_FIPS": 51
+          },
+          {
+            "state_name": "Washington",
+            "ELECTRIFIED": 11037.74941681224,
+            "REDUCTION": 0.7937547731715316,
+            "STATE_FIPS": 53
+          },
+          {
+            "state_name": "West Virginia",
+            "ELECTRIFIED": 15010.065469700412,
+            "REDUCTION": 0.550644416262152,
+            "STATE_FIPS": 54
+          },
+          {
+            "state_name": "Wisconsin",
+            "ELECTRIFIED": 13189.621812249245,
+            "REDUCTION": 0.8131903324618579,
+            "STATE_FIPS": 55
+          },
+          {
+            "state_name": "Wyoming",
+            "ELECTRIFIED": 11842.075036982476,
+            "REDUCTION": 0.8488398208709511,
+            "STATE_FIPS": 56
+          }
+        ]
+      },
+      {
+        "name": "data_0",
+        "source": "source_0",
+        "transform": [
+          {
+            "type": "lookup",
+            "from": "source_1",
+            "fields": ["id"],
+            "key": "STATE_FIPS",
+            "values": ["state_name", "TOTAL", "REDUCTION"]
+          },
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"TOTAL\"]) && isFinite(+datum[\"TOTAL\"])"
+          }
+        ]
+      },
+      {
+        "name": "data_1",
+        "source": "source_0",
+        "transform": [
+          {
+            "type": "lookup",
+            "from": "source_2",
+            "fields": ["id"],
+            "key": "STATE_FIPS",
+            "values": ["state_name", "ELECTRIFIED", "REDUCTION"]
+          },
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"ELECTRIFIED\"]) && isFinite(+datum[\"ELECTRIFIED\"])"
+          }
+        ]
+      }
+    ],
+    "signals": [
+      {"name": "childWidth", "value": 400},
+      {
+        "name": "unit",
+        "value": {},
+        "on": [
+          {"events": "pointermove", "update": "isTuple(group()) ? group() : unit"}
+        ]
+      },
+      {
+        "name": "param_11",
+        "update": "vlSelectionResolve(\"param_11_store\", \"union\", true, true)"
+      }
+    ],
+    "marks": [
+      {
+        "type": "group",
+        "name": "view_18_group",
+        "encode": {
+          "update": {
+            "width": {"signal": "childWidth"},
+            "height": {"signal": "height"}
+          }
+        },
+        "signals": [
+          {
+            "name": "param_11_tuple",
+            "on": [
+              {
+                "events": [{"source": "scope", "type": "click"}],
+                "update": "datum && item().mark.marktype !== 'group' && indexof(item().mark.role, 'legend') < 0 ? {unit: \"view_18\", fields: param_11_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"state_name\"]]} : null",
+                "force": true
+              },
+              {
+                "events": [{"source": "view", "type": "dblclick"}],
+                "update": "null"
+              }
+            ]
+          },
+          {
+            "name": "param_11_tuple_fields",
+            "value": [{"type": "E", "field": "state_name"}]
+          },
+          {
+            "name": "param_11_toggle",
+            "value": false,
+            "on": [
+              {
+                "events": [{"source": "scope", "type": "click"}],
+                "update": "event.shiftKey"
+              },
+              {
+                "events": [{"source": "view", "type": "dblclick"}],
+                "update": "false"
+              }
+            ]
+          },
+          {
+            "name": "param_11_modify",
+            "on": [
+              {
+                "events": {"signal": "param_11_tuple"},
+                "update": "modify(\"param_11_store\", param_11_toggle ? null : param_11_tuple, param_11_toggle ? null : true, param_11_toggle ? param_11_tuple : null)"
+              }
+            ]
+          }
+        ],
+        "marks": [
+          {
+            "type": "shape",
+            "name": "view_18_marks",
+            "from": {"data": "data_0"},
+            "encode": {
+              "update": {
+                "stroke": {"value": "white"},
+                "opacity": [
+                  {
+                    "value": 1,
+                    "test": "!length(data(\"param_11_store\")) || vlSelectionTest(\"param_11_store\", datum)"
+                  },
+                  {"value": 0.2}
+                ],
+                "tooltip": {
+                  "signal": "{\"State\": isValid(datum[\"state_name\"]) ? datum[\"state_name\"] : \"\"+datum[\"state_name\"], \"Reduction\": format(datum[\"REDUCTION\"], \".2f\")}"
+                },
+                "fill": {"field": "TOTAL", "scale": "color"}
+              }
+            },
+            "transform": [{"type": "geoshape", "projection": "projection"}],
+            "style": ["geoshape"],
+            "interactive": true
+          }
+        ],
+        "title": {
+          "text": "Present Moment",
+          "align": "center",
+          "color": "black",
+          "fontWeight": "bold",
+          "frame": "group",
+          "fontSize": 15
+        },
+        "style": "view"
+      },
+      {
+        "type": "group",
+        "name": "view_19_group",
+        "encode": {
+          "update": {
+            "height": {"signal": "height"},
+            "width": {"signal": "childWidth"}
+          }
+        },
+        "signals": [
+          {
+            "name": "param_11_tuple",
+            "on": [
+              {
+                "events": [{"source": "scope", "type": "click"}],
+                "update": "datum && item().mark.marktype !== 'group' && indexof(item().mark.role, 'legend') < 0 ? {unit: \"view_19\", fields: param_11_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"state_name\"]]} : null",
+                "force": true
+              },
+              {
+                "events": [{"source": "view", "type": "dblclick"}],
+                "update": "null"
+              }
+            ]
+          },
+          {
+            "name": "param_11_tuple_fields",
+            "value": [{"type": "E", "field": "state_name"}]
+          },
+          {
+            "name": "param_11_toggle",
+            "value": false,
+            "on": [
+              {
+                "events": [{"source": "scope", "type": "click"}],
+                "update": "event.shiftKey"
+              },
+              {
+                "events": [{"source": "view", "type": "dblclick"}],
+                "update": "false"
+              }
+            ]
+          },
+          {
+            "name": "param_11_modify",
+            "on": [
+              {
+                "events": {"signal": "param_11_tuple"},
+                "update": "modify(\"param_11_store\", param_11_toggle ? null : param_11_tuple, param_11_toggle ? null : true, param_11_toggle ? param_11_tuple : null)"
+              }
+            ]
+          }
+        ],
+        "marks": [
+          {
+            "type": "shape",
+            "name": "view_19_marks",
+            "from": {"data": "data_1"},
+            "encode": {
+              "update": {
+                "stroke": {"value": "white"},
+                "fill": {"field": "ELECTRIFIED", "scale": "color"},
+                "opacity": [
+                  {
+                    "value": 1,
+                    "test": "!length(data(\"param_11_store\")) || vlSelectionTest(\"param_11_store\", datum)"
+                  },
+                  {"value": 0.2}
+                ],
+                "tooltip": {
+                  "signal": "{\"State\": isValid(datum[\"state_name\"]) ? datum[\"state_name\"] : \"\"+datum[\"state_name\"], \"Reduction\": format(datum[\"REDUCTION\"], \".0%\")}"
+                }
+              }
+            },
+            "transform": [{"type": "geoshape", "projection": "projection"}],
+            "interactive": true,
+            "style": ["geoshape"]
+          }
+        ],
+        "title": {
+          "text": "Electrified Space Heating",
+          "align": "center",
+          "fontWeight": "bold",
+          "color": "black",
+          "frame": "group",
+          "fontSize": 15
+        },
+        "style": "view"
+      }
+    ],
+    "scales": [
+      {
+        "name": "color",
+        "type": "linear",
+        "domain": {
+          "fields": [
+            {"data": "data_0", "field": "TOTAL"},
+            {"data": "data_1", "field": "ELECTRIFIED"}
+          ]
+        },
+        "range": {"scheme": "plasma"},
+        "zero": false,
+        "interpolate": "hcl"
+      }
+    ],
+    "projections": [
+      {
+        "name": "projection",
+        "type": "albersUsa",
+        "size": {"signal": "[childWidth, height]"},
+        "fit": {"signal": "[data('data_0'), data('data_1')]"}
+      }
+    ],
+    "legends": [
+      {
+        "title": "kWh/Household",
+        "fill": "color",
+        "gradientLength": {"signal": "clamp(height, 64, 200)"},
+        "encode": {"gradient": {"update": {"opacity": {"value": 1}}}}
+      }
+    ],
+    "background": "white",
+    "padding": 5,
+    "layout": {"padding": 20, "bounds": "full", "align": "each"},
+    "height": 300
+  }

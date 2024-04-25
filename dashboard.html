@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.28.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.18.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.24.0"></script>
+<style>
+
+body, button{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Monaco, monospace;
+
+}
+
+.h1, .h2, .p {
+  padding: .75em 1em;
+  margin: 1.5em .75em;
+  background-color: #e0e0e0;
+}
+.h1{font-size: 28px; font-weight: bolder;}
+.h2{font-size: 24px; font-weight: bolder; margin-top: 3em;}
+
+.container {
+  margin:auto;
+  position: relative;
+  width:900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#viz0 {
+  display: flex; 
+  flex: 1 1; 
+  gap: 50px; 
+  padding: .75em 1em;
+  margin: 1.5em .75em;
+  background-color: #e0e0e0;
+  margin-bottom: 5em;
+}
+
+#toggle {
+  font-weight: bolder;
+  padding: .5em 1em;
+}
+
+
+
+.dataframe {
+  width: 75%;
+  font-weight: bold;
+  margin:1.5em;
+  }
+  .dataframe thead th {
+    background-color: #e0e0e0;
+  }
+  .dataframe tbody th {
+    background-color: #f2f2f2;
+  }
+  .dataframe tr td,
+  .dataframe tr th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  .dataframe tr td:nth-child(1),
+  .dataframe tr th:nth-child(1){
+    text-align: left;
+  }
+  .dataframe tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .dataframe tr:hover {
+    background-color: #e9e9e9;
+  }
+
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="h1">
+      How can we predict the energy usage of a home?
+    </div>
+    <div class="p">
+      Understanding anthropogenic carbon emissions is essential for fostering global sustainability. A detailed grasp of emissions and their sources can empower targeted and impactful remediation efforts. In the United States, residential buildings, considered at every stage of their lifecycle, account for 20% of the nation's annual emissions. Of that, operational emissions constitute a much larger share than embodied emissions. 
+    </div>
+    <div class="p">
+      To understand residential operational emissions, we'll begin by getting a generally understanding what those emissions look like. The Residential Energy Consumption Survey (RECS), a nationally representative survey of home energy consumption, was chosen for this. 
+    </div>
+    <div id="viz0" style="margin-bottom: 5em;">
+      <div style="display:flex; flex-direction: column;"><div style="margin-top: 1em;text-align: center; font-size: 20px; font-weight: bolder;">Energy Across All End-Uses</div><img id="viz01" src="viz01.png" height="400px"><p>Only HVAC/water related end-uses are 5%+</p></div>
+      <div style="display:flex; flex-direction: column;"><div style="margin-top: 1em;text-align: center; font-size: 20px; font-weight: bolder;">Energy Across Categories</div><img id="viz01" src="viz02.png" height="400px"><p>Grouping, we get something more palatable</p></div>
+    </div>
+
+    <div class="h2">Exploring Energy Per Household Per State</div>
+    <div class="p">
+      Taking a look at the distribution of energy consumption among every state, we can see that Northern regions have noticeably higher consumption. Mean consumption across the entire US is ~23500 kWh.
+    </div>
+    <div id="viz1"></div>
+    <div class="p" style="margin-top: 0;">
+      Recalling HVAC's substantial share of total consumption, we can map HVAC consumption and weather, its driving factor, to reveal the strong relationship between the three.
+    </div>
+
+    <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 2em 25px 2em 0;">
+      <div style="display: flex; flex-direction: column;">
+        <div id="viz21"></div>
+        <div id="viz22"></div>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <div id="viz31"></div>
+        <div id="viz32"></div>
+      </div>
+    </div>
+    <button type="button" id="toggle">Toggle Grayscale</button>
+    <div class="p">
+      With this relationship in mind, we can plot Heating Degree Days (HDD) and Cooling Degree Days (CDD) against national energy consumption to find the correlation between them. The size of each bubble represents that state's share of national energy use.
+    </div>
+    <div id="viz5" style="margin-right: 50px;"></div>
+    <div class="p">
+      Viewed through another lens, we can see the relationship between the proportion of heating/cooling energy to total energy more clearly. Here size, represents the same as above.
+    </div>
+    <img id="viz4" src="viz4.png" width="1000px">
+
+    <div class="h2" style="margin-top: 2em;">Predicting Energy</div>
+    <div class="p">
+      With correlation coefficients both above .7, HDD and CDD seem like promising predictive variables but more would never hurt. However, it's important to remember that above correlations are taken at the state level, that is, between the average HDD/CDD (for that state) and average kWh consumption (for that state). 
+    </div>
+    <div class="p">
+      Though state-level information is necessary for policy, remediation efforts in the built environment are most impactful at the individual-house level. Taking this into account, conducting feature selection with all features in the RECS and consumption gives us a bleaker picture for our hopes of predicting energy consumption.
+    </div>
+<table id= "viz60" class="dataframe">
+  <colgroup>
+    <col style="width: 49%;">
+    <col style="width: 17%;">
+    <col style="width: 17%;">
+    <col style="width: 17%;">
+  </colgroup>
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>Correlation</th>
+        <th>XGBoost Imp.</th>
+        <th>KBest of 10</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <th># Windows</th>
+        <td>0.54</td>
+        <td>0.02</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <th>Has Basement</th>
+        <td>0.54</td>
+        <td>0.00</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <th># Rooms</th>
+        <td>0.53</td>
+        <td>0.01</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <th>Total Energy Consuming sqft.</th>
+        <td>0.53</td>
+        <td>0.04</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <th># Bedrooms</th>
+        <td>0.50</td>
+        <td>0.01</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <th># Stories</th>
+        <td>0.48</td>
+        <td>0.01</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <th>Has Swimming Pool</th>
+        <td>0.47</td>
+        <td>0.00</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <th>Has Heating in Basement</th>
+        <td>0.47</td>
+        <td>0.00</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <th>Electric-only House</th>
+        <td>0.47</td>
+        <td>0.00</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <th>Is Studio Apartment</th>
+        <td>0.47</td>
+        <td>0.00</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <th>Has Crawlspace</th>
+        <td>0.43</td>
+        <td>0.02</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>First Percentile Temperature</th>
+        <td>0.36</td>
+        <td>0.02</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>Heating Degree Days</th>
+        <td>0.36</td>
+        <td>0.03</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>Num. Residents</th>
+        <td>0.27</td>
+        <td>0.02</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>Water Heating Fuel</th>
+        <td>0.23</td>
+        <td>0.03</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>Thermostate Temp. When Home</th>
+        <td>0.20</td>
+        <td>0.02</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>Space Heating Fuel</th>
+        <td>0.19</td>
+        <td>0.04</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>Year Built</th>
+        <td>0.13</td>
+        <td>0.04</td>
+        <td>False</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="p">
+  Interestingly, unlike the data at the state level, data at the individual level doesn't seem to exhibit the same strength of relationship between weather and energy consumption.
+</div>
+
+<table id="viz70" class="dataframe">
+  <colgroup>
+    <col style="width: 49%;">
+    <col style="width: 17%;">
+    <col style="width: 17%;">
+    <col style="width: 17%;">
+  </colgroup>
+  <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>Correlation</th>
+        <th>XGBoost Imp.</th>
+        <th>KBest of 10</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <th>Heating Degree Days</th>
+        <td>0.36</td>
+        <td>0.03</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>99th Percentile Temperature</th>
+        <td>0.36</td>
+        <td>0.02</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>Cooling Degree Days</th>
+        <td>0.27</td>
+        <td>0.00</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>1st Percentile Temperature</th>
+        <td>0.13</td>
+        <td>0.01</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <th>Avg. Ground Water Temperature</th>
+        <td>0.34</td>
+        <td>0.01</td>
+        <td>False</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="p">
+  We can see that when disaggregated, the relationships are not quite as strong, but they are certainly still present. Because most of the selected features are binary or categorical, they don't make for photogenic visualizations, with the exception of square footage. Naturally, square footage is also closely related to home type.
+</div>
+
+<div id="viz80" style="margin: 2em 25px 2em 0;"></div>
+
+<div class="p">
+  With such general information about a home, predictions models are unlikely to be practically useful. However, there are still insights within the data. One in particular is its substantiation of a key argument for electrification movement: electric homes use less energy.
+</div>
+
+<div class="h2" style="margin-top: 5em;"
+>The Potential of Electrification
+</div>
+
+<div class="p">
+  To wrap up, one last chart shows the remarkable potential of electrification: a <strong>38%</strong> reduction in energy consumption, bringing the current mean of ~23500 kWh to an electrified mean of ~14500. 
+</div>
+
+<div id="viz90"></div>
+
+<div class="p" style="margin: 5em 0 15em 0;">
+  By: Kai Pang-Whitsett
+</div>
+<script>
+
+    function grey(f) {
+      var g = Math.max(0, Math.min(255, Math.round(255 * (1-f)))) + '';
+      return 'rgb(' + g + ', ' + g + ', ' + g + ')';
+    }
+    vega.scheme("mygrey", grey);
+
+    // Function to change color scheme of specific charts
+    function changeColorScheme(chartIds, colorScheme) {
+      chartIds.forEach(id => {
+        choro(id, colorScheme);
+      });
+    }
+
+
+    function choropleth(id, schema, color = null) {
+      fetch(schema)
+        .then(response => response.json())
+        .then(data => {
+          const spec = data;
+  
+          if (color) { // assigning override color scheme
+            spec.scales.forEach(scale => {if (scale.range) {scale.range.scheme = color;}});
+          }
+  
+          vegaEmbed(id, spec, { actions: false })
+            .then(console.log)
+            .catch(console.warn);
+        })
+        .catch(error => {
+          console.error('Error loading', 'file:', error);
+        });
+    }
+  
+    // Generator function to create choro function calls based on div ID
+    function choroGenerator(mappings) {
+      return function(id, colorScheme = null) {
+        const schema = mappings[id];
+        if (schema) {
+          choropleth(id, schema, colorScheme);
+        } else {
+          console.error(`No schema found for div ID: ${id}`);
+        }
+      };
+    }
+  
+    // Mapping of div IDs to schema files
+    const mappings = {
+      '#viz1': 'viz10.json',
+      '#viz21': 'viz21.json',
+      '#viz22': 'viz22.json',
+      '#viz31': 'viz31.json',
+      '#viz32': 'viz32.json',
+      '#viz5': 'viz50.json',
+      '#viz80': 'viz80.json',
+      '#viz90': 'viz90.json'
+
+      // '#viz00': '.json'
+    };
+    const choro = choroGenerator(mappings);
+
+    choro('#viz1');
+    choro('#viz21');
+    choro('#viz22');
+    choro('#viz31');
+    choro('#viz32');
+    choro('#viz5');
+    choro('#viz80');
+    choro('#viz90');
+
+
+
+    // choro('#viz00', "mygrey");
+  
+
+  
+    // event handling
+    greyscale = false
+    const chartIds = ['#viz1', '#viz21', '#viz22', '#viz31', '#viz32'];
+    const colorSchemeButton = document.getElementById('toggle');
+    colorSchemeButton.addEventListener('click', () => {
+      if (greyscale == false) {
+        changeColorScheme(chartIds, 'mygrey');
+        greyscale = true
+      } else {
+        choro('#viz1');
+        choro('#viz21');
+        choro('#viz22');
+        choro('#viz31');
+        choro('#viz32');
+        greyscale = false
+      }
+    });
+  </script>
+
+</body>
+</html>

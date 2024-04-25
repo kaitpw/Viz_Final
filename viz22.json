@@ -1,0 +1,276 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "data": [
+    {
+      "name": "source_1",
+      "values": [
+        {"HDD65": 2101.999066397437, "state_name": "Alabama", "STATE_FIPS": 1},
+        {"HDD65": 10812.781552542732, "state_name": "Alaska", "STATE_FIPS": 2},
+        {"HDD65": 1399.1721314353488, "state_name": "Arizona", "STATE_FIPS": 4},
+        {"HDD65": 3154.286794217937, "state_name": "Arkansas", "STATE_FIPS": 5},
+        {
+          "HDD65": 1650.0485499585993,
+          "state_name": "California",
+          "STATE_FIPS": 6
+        },
+        {"HDD65": 5778.742737979143, "state_name": "Colorado", "STATE_FIPS": 8},
+        {
+          "HDD65": 5180.132226314734,
+          "state_name": "Connecticut",
+          "STATE_FIPS": 9
+        },
+        {
+          "HDD65": 4052.6144845711306,
+          "state_name": "Delaware",
+          "STATE_FIPS": 10
+        },
+        {
+          "HDD65": 3633.4272830552377,
+          "state_name": "District of Columbia",
+          "STATE_FIPS": 11
+        },
+        {
+          "HDD65": 404.87623945422746,
+          "state_name": "Florida",
+          "STATE_FIPS": 12
+        },
+        {"HDD65": 2259.614449270024, "state_name": "Georgia", "STATE_FIPS": 13},
+        {"HDD65": 6.737509661109087, "state_name": "Hawaii", "STATE_FIPS": 15},
+        {"HDD65": 6044.948615253981, "state_name": "Idaho", "STATE_FIPS": 16},
+        {
+          "HDD65": 5582.0190605469725,
+          "state_name": "Illinois",
+          "STATE_FIPS": 17
+        },
+        {"HDD65": 5171.933566206769, "state_name": "Indiana", "STATE_FIPS": 18},
+        {"HDD65": 6525.03538974114, "state_name": "Iowa", "STATE_FIPS": 19},
+        {"HDD65": 4707.957669534072, "state_name": "Kansas", "STATE_FIPS": 20},
+        {
+          "HDD65": 4088.9640041644852,
+          "state_name": "Kentucky",
+          "STATE_FIPS": 21
+        },
+        {
+          "HDD65": 1221.6416861697917,
+          "state_name": "Louisiana",
+          "STATE_FIPS": 22
+        },
+        {"HDD65": 7044.051662614327, "state_name": "Maine", "STATE_FIPS": 23},
+        {
+          "HDD65": 3960.5364352431507,
+          "state_name": "Maryland",
+          "STATE_FIPS": 24
+        },
+        {
+          "HDD65": 5613.797574087808,
+          "state_name": "Massachusetts",
+          "STATE_FIPS": 25
+        },
+        {
+          "HDD65": 6352.273402399448,
+          "state_name": "Michigan",
+          "STATE_FIPS": 26
+        },
+        {
+          "HDD65": 7735.650245636008,
+          "state_name": "Minnesota",
+          "STATE_FIPS": 27
+        },
+        {
+          "HDD65": 1882.8721288728027,
+          "state_name": "Mississippi",
+          "STATE_FIPS": 28
+        },
+        {
+          "HDD65": 4513.315696714623,
+          "state_name": "Missouri",
+          "STATE_FIPS": 29
+        },
+        {"HDD65": 7289.449442491625, "state_name": "Montana", "STATE_FIPS": 30},
+        {
+          "HDD65": 6048.854278655766,
+          "state_name": "Nebraska",
+          "STATE_FIPS": 31
+        },
+        {"HDD65": 2863.5109711159425, "state_name": "Nevada", "STATE_FIPS": 32},
+        {
+          "HDD65": 6534.43856197813,
+          "state_name": "New Hampshire",
+          "STATE_FIPS": 33
+        },
+        {
+          "HDD65": 4509.195323983125,
+          "state_name": "New Jersey",
+          "STATE_FIPS": 34
+        },
+        {
+          "HDD65": 4096.109768067037,
+          "state_name": "New Mexico",
+          "STATE_FIPS": 35
+        },
+        {
+          "HDD65": 5103.535692123167,
+          "state_name": "New York",
+          "STATE_FIPS": 36
+        },
+        {
+          "HDD65": 2843.500572669909,
+          "state_name": "North Carolina",
+          "STATE_FIPS": 37
+        },
+        {
+          "HDD65": 8593.820696195517,
+          "state_name": "North Dakota",
+          "STATE_FIPS": 38
+        },
+        {"HDD65": 5222.612435115084, "state_name": "Ohio", "STATE_FIPS": 39},
+        {
+          "HDD65": 3267.1291130199875,
+          "state_name": "Oklahoma",
+          "STATE_FIPS": 40
+        },
+        {"HDD65": 4626.055006951166, "state_name": "Oregon", "STATE_FIPS": 41},
+        {
+          "HDD65": 5130.028730370816,
+          "state_name": "Pennsylvania",
+          "STATE_FIPS": 42
+        },
+        {
+          "HDD65": 5280.223519963975,
+          "state_name": "Rhode Island",
+          "STATE_FIPS": 44
+        },
+        {
+          "HDD65": 2153.1737601784753,
+          "state_name": "South Carolina",
+          "STATE_FIPS": 45
+        },
+        {
+          "HDD65": 7218.062145740335,
+          "state_name": "South Dakota",
+          "STATE_FIPS": 46
+        },
+        {
+          "HDD65": 3369.7677414712102,
+          "state_name": "Tennessee",
+          "STATE_FIPS": 47
+        },
+        {"HDD65": 1518.4681188428547, "state_name": "Texas", "STATE_FIPS": 48},
+        {"HDD65": 5393.6973830094375, "state_name": "Utah", "STATE_FIPS": 49},
+        {"HDD65": 7262.16058017328, "state_name": "Vermont", "STATE_FIPS": 50},
+        {
+          "HDD65": 3622.002540345227,
+          "state_name": "Virginia",
+          "STATE_FIPS": 51
+        },
+        {
+          "HDD65": 4792.060671263033,
+          "state_name": "Washington",
+          "STATE_FIPS": 53
+        },
+        {
+          "HDD65": 4744.752645727484,
+          "state_name": "West Virginia",
+          "STATE_FIPS": 54
+        },
+        {
+          "HDD65": 7180.82851152256,
+          "state_name": "Wisconsin",
+          "STATE_FIPS": 55
+        },
+        {"HDD65": 7426.225650766756, "state_name": "Wyoming", "STATE_FIPS": 56}
+      ]
+    },
+    {
+      "name": "source_0",
+      "url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json",
+      "format": {"type": "topojson", "feature": "states"},
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "source_1",
+          "fields": ["id"],
+          "values": ["HDD65", "state_name"],
+          "key": "STATE_FIPS"
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"HDD65\"]) && isFinite(+datum[\"HDD65\"])"
+        }
+      ]
+    },
+    {
+      "name": "source_0_color_domain_HDD65",
+      "source": "source_0",
+      "transform": [
+        {"type": "formula", "expr": "+datum['HDD65']", "as": "HDD65"},
+        {
+          "type": "aggregate",
+          "groupby": [],
+          "fields": ["HDD65", "HDD65"],
+          "ops": ["min", "max"],
+          "as": ["min", "max"]
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "shape",
+      "name": "marks",
+      "from": {"data": "source_0"},
+      "encode": {
+        "update": {
+          "stroke": {"value": "white"},
+          "fill": {"field": "HDD65", "scale": "color"},
+          "tooltip": {
+            "signal": "{\"State\": isValid(datum[\"state_name\"]) ? datum[\"state_name\"] : \"\"+datum[\"state_name\"], \"Avg HDD\": format(datum[\"HDD65\"], \".2f\")}"
+          }
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}],
+      "style": ["geoshape"]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "linear",
+      "domain": [
+        {"signal": "(data(\"source_0_color_domain_HDD65\")[0] || {}).min"},
+        {"signal": "(data(\"source_0_color_domain_HDD65\")[0] || {}).max"}
+      ],
+      "range": {"scheme": "yelloworangered"},
+      "interpolate": "hcl",
+      "zero": false
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "size": {"signal": "[width, height]"},
+      "fit": {"signal": "data('source_0')"},
+      "type": "albersUsa"
+    }
+  ],
+  "title": {
+    "text": "Annual Heating Degree Days (HDD) by State",
+    "align": "center",
+    "fontSize": 15,
+    "fontWeight": "bold",
+    "color": "black",
+    "frame": "group"
+  },
+  "width": 350,
+  "style": "view",
+  "legends": [
+    {
+      "title": "HDD/Household",
+      "fill": "color",
+      "gradientLength": {"signal": "clamp(height, 64, 200)"}
+    }
+  ],
+  "background": "white",
+  "padding": 5,
+  "height": 250
+}

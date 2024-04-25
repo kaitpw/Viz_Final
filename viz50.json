@@ -1,0 +1,886 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "data": [
+    {
+      "name": "source_0",
+      "values": [
+        {
+          "HDD65": 2101.999066397437,
+          "SIZE": 0.016295282751348502,
+          "TOTAL": 19428.761906366726,
+          "state_name": "Alabama"
+        },
+        {
+          "HDD65": 10812.781552542732,
+          "SIZE": 0.025576798784168065,
+          "TOTAL": 30495.05439625027,
+          "state_name": "Alaska"
+        },
+        {
+          "HDD65": 1399.1721314353488,
+          "SIZE": 0.015253285680193341,
+          "TOTAL": 18186.395430649714,
+          "state_name": "Arizona"
+        },
+        {
+          "HDD65": 3154.286794217937,
+          "SIZE": 0.01851275552969433,
+          "TOTAL": 22072.64058596591,
+          "state_name": "Arkansas"
+        },
+        {
+          "HDD65": 1650.0485499585993,
+          "SIZE": 0.013362688225722563,
+          "TOTAL": 15932.248119173573,
+          "state_name": "California"
+        },
+        {
+          "HDD65": 5778.742737979143,
+          "SIZE": 0.02068429940199744,
+          "TOTAL": 24661.758523223874,
+          "state_name": "Colorado"
+        },
+        {
+          "HDD65": 5180.132226314734,
+          "SIZE": 0.021288302055467483,
+          "TOTAL": 25381.907042531533,
+          "state_name": "Connecticut"
+        },
+        {
+          "HDD65": 4052.6144845711306,
+          "SIZE": 0.0177525569155445,
+          "TOTAL": 21166.260616913532,
+          "state_name": "Delaware"
+        },
+        {
+          "HDD65": 3633.4272830552377,
+          "SIZE": 0.011672305181246971,
+          "TOTAL": 13916.81517438728,
+          "state_name": "District of Columbia"
+        },
+        {
+          "HDD65": 404.87623945422746,
+          "SIZE": 0.012314514809664676,
+          "TOTAL": 14682.517626740939,
+          "state_name": "Florida"
+        },
+        {
+          "HDD65": 2259.614449270024,
+          "SIZE": 0.01769663900281619,
+          "TOTAL": 21099.590045480247,
+          "state_name": "Georgia"
+        },
+        {
+          "HDD65": 6.737509661109087,
+          "SIZE": 0.007453062672373914,
+          "TOTAL": 8886.239186171777,
+          "state_name": "Hawaii"
+        },
+        {
+          "HDD65": 6044.948615253981,
+          "SIZE": 0.021671258382859295,
+          "TOTAL": 25838.50343419687,
+          "state_name": "Idaho"
+        },
+        {
+          "HDD65": 5582.0190605469725,
+          "SIZE": 0.023033245468740197,
+          "TOTAL": 27462.391967762604,
+          "state_name": "Illinois"
+        },
+        {
+          "HDD65": 5171.933566206769,
+          "SIZE": 0.02242717509926216,
+          "TOTAL": 26739.77812381945,
+          "state_name": "Indiana"
+        },
+        {
+          "HDD65": 6525.03538974114,
+          "SIZE": 0.023999775886476078,
+          "TOTAL": 28614.780032946535,
+          "state_name": "Iowa"
+        },
+        {
+          "HDD65": 4707.957669534072,
+          "SIZE": 0.02218267535978563,
+          "TOTAL": 26448.26264066129,
+          "state_name": "Kansas"
+        },
+        {
+          "HDD65": 4088.9640041644852,
+          "SIZE": 0.018457482922575645,
+          "TOTAL": 22006.739408303667,
+          "state_name": "Kentucky"
+        },
+        {
+          "HDD65": 1221.6416861697917,
+          "SIZE": 0.016304162236324866,
+          "TOTAL": 19439.348859786893,
+          "state_name": "Louisiana"
+        },
+        {
+          "HDD65": 7044.051662614327,
+          "SIZE": 0.023872508705786978,
+          "TOTAL": 28463.040183455527,
+          "state_name": "Maine"
+        },
+        {
+          "HDD65": 3960.5364352431507,
+          "SIZE": 0.01818539797080168,
+          "TOTAL": 21682.33425210077,
+          "state_name": "Maryland"
+        },
+        {
+          "HDD65": 5613.797574087808,
+          "SIZE": 0.021067347548293713,
+          "TOTAL": 25118.464389984583,
+          "state_name": "Massachusetts"
+        },
+        {
+          "HDD65": 6352.273402399448,
+          "SIZE": 0.025941694172780427,
+          "TOTAL": 30930.116845565186,
+          "state_name": "Michigan"
+        },
+        {
+          "HDD65": 7735.650245636008,
+          "SIZE": 0.02408010054825528,
+          "TOTAL": 28710.55061592635,
+          "state_name": "Minnesota"
+        },
+        {
+          "HDD65": 1882.8721288728027,
+          "SIZE": 0.017418167510785426,
+          "TOTAL": 20767.570257978943,
+          "state_name": "Mississippi"
+        },
+        {
+          "HDD65": 4513.315696714623,
+          "SIZE": 0.021308765070741933,
+          "TOTAL": 25406.304965397936,
+          "state_name": "Missouri"
+        },
+        {
+          "HDD65": 7289.449442491625,
+          "SIZE": 0.021414100240698355,
+          "TOTAL": 25531.895418087726,
+          "state_name": "Montana"
+        },
+        {
+          "HDD65": 6048.854278655766,
+          "SIZE": 0.021413298468539826,
+          "TOTAL": 25530.93947024632,
+          "state_name": "Nebraska"
+        },
+        {
+          "HDD65": 2863.5109711159425,
+          "SIZE": 0.01848682275384335,
+          "TOTAL": 22041.721102378662,
+          "state_name": "Nevada"
+        },
+        {
+          "HDD65": 6534.43856197813,
+          "SIZE": 0.023020214800351782,
+          "TOTAL": 27446.855584782174,
+          "state_name": "New Hampshire"
+        },
+        {
+          "HDD65": 4509.195323983125,
+          "SIZE": 0.022200390261283447,
+          "TOTAL": 26469.38400496332,
+          "state_name": "New Jersey"
+        },
+        {
+          "HDD65": 4096.109768067037,
+          "SIZE": 0.019478265005068496,
+          "TOTAL": 23223.81138807018,
+          "state_name": "New Mexico"
+        },
+        {
+          "HDD65": 5103.535692123167,
+          "SIZE": 0.018894064269922777,
+          "TOTAL": 22527.272569943118,
+          "state_name": "New York"
+        },
+        {
+          "HDD65": 2843.500572669909,
+          "SIZE": 0.015515034223762963,
+          "TOTAL": 18498.47655314092,
+          "state_name": "North Carolina"
+        },
+        {
+          "HDD65": 8593.820696195517,
+          "SIZE": 0.021180166478001274,
+          "TOTAL": 25252.977681792174,
+          "state_name": "North Dakota"
+        },
+        {
+          "HDD65": 5222.612435115084,
+          "SIZE": 0.022458842259511575,
+          "TOTAL": 26777.53467742609,
+          "state_name": "Ohio"
+        },
+        {
+          "HDD65": 3267.1291130199875,
+          "SIZE": 0.020302124462820786,
+          "TOTAL": 24206.093775754005,
+          "state_name": "Oklahoma"
+        },
+        {
+          "HDD65": 4626.055006951166,
+          "SIZE": 0.017760566220938055,
+          "TOTAL": 21175.81006075573,
+          "state_name": "Oregon"
+        },
+        {
+          "HDD65": 5130.028730370816,
+          "SIZE": 0.021516997391547207,
+          "TOTAL": 25654.579036113344,
+          "state_name": "Pennsylvania"
+        },
+        {
+          "HDD65": 5280.223519963975,
+          "SIZE": 0.022914194161407934,
+          "TOTAL": 27320.447851781624,
+          "state_name": "Rhode Island"
+        },
+        {
+          "HDD65": 2153.1737601784753,
+          "SIZE": 0.015200873225102642,
+          "TOTAL": 18123.904394045818,
+          "state_name": "South Carolina"
+        },
+        {
+          "HDD65": 7218.062145740335,
+          "SIZE": 0.021267626667555883,
+          "TOTAL": 25357.255909121588,
+          "state_name": "South Dakota"
+        },
+        {
+          "HDD65": 3369.7677414712102,
+          "SIZE": 0.0169501776217027,
+          "TOTAL": 20209.5888919408,
+          "state_name": "Tennessee"
+        },
+        {
+          "HDD65": 1518.4681188428547,
+          "SIZE": 0.0158428096916445,
+          "TOTAL": 18889.28115723356,
+          "state_name": "Texas"
+        },
+        {
+          "HDD65": 5393.6973830094375,
+          "SIZE": 0.022019172432250177,
+          "TOTAL": 26253.31914084277,
+          "state_name": "Utah"
+        },
+        {
+          "HDD65": 7262.16058017328,
+          "SIZE": 0.024139378695812185,
+          "TOTAL": 28781.227573958164,
+          "state_name": "Vermont"
+        },
+        {
+          "HDD65": 3622.002540345227,
+          "SIZE": 0.0183453734849359,
+          "TOTAL": 21873.07203937268,
+          "state_name": "Virginia"
+        },
+        {
+          "HDD65": 4792.060671263033,
+          "SIZE": 0.017003408882377186,
+          "TOTAL": 20273.056185230616,
+          "state_name": "Washington"
+        },
+        {
+          "HDD65": 4744.752645727484,
+          "SIZE": 0.020258599922151378,
+          "TOTAL": 24154.19974294381,
+          "state_name": "West Virginia"
+        },
+        {
+          "HDD65": 7180.82851152256,
+          "SIZE": 0.022669403590278768,
+          "TOTAL": 27028.585611895145,
+          "state_name": "Wisconsin"
+        },
+        {
+          "HDD65": 7426.225650766756,
+          "SIZE": 0.021935846894783503,
+          "TOTAL": 26153.970632881097,
+          "state_name": "Wyoming"
+        }
+      ]
+    },
+    {
+      "name": "source_1",
+      "values": [
+        {
+          "CDD65": 2168.175713432476,
+          "SIZE": 0.016295282751348502,
+          "TOTAL": 19428.761906366726,
+          "state_name": "Alabama"
+        },
+        {
+          "CDD65": 2.341855107807501,
+          "SIZE": 0.025576798784168065,
+          "TOTAL": 30495.05439625027,
+          "state_name": "Alaska"
+        },
+        {
+          "CDD65": 4426.577482314403,
+          "SIZE": 0.015253285680193341,
+          "TOTAL": 18186.395430649714,
+          "state_name": "Arizona"
+        },
+        {
+          "CDD65": 1719.7665226122704,
+          "SIZE": 0.01851275552969433,
+          "TOTAL": 22072.64058596591,
+          "state_name": "Arkansas"
+        },
+        {
+          "CDD65": 1537.3444314534406,
+          "SIZE": 0.013362688225722563,
+          "TOTAL": 15932.248119173573,
+          "state_name": "California"
+        },
+        {
+          "CDD65": 909.8996462020099,
+          "SIZE": 0.02068429940199744,
+          "TOTAL": 24661.758523223874,
+          "state_name": "Colorado"
+        },
+        {
+          "CDD65": 984.0885093494464,
+          "SIZE": 0.021288302055467483,
+          "TOTAL": 25381.907042531533,
+          "state_name": "Connecticut"
+        },
+        {
+          "CDD65": 1319.124994462421,
+          "SIZE": 0.0177525569155445,
+          "TOTAL": 21166.260616913532,
+          "state_name": "Delaware"
+        },
+        {
+          "CDD65": 1535.4400910974907,
+          "SIZE": 0.011672305181246971,
+          "TOTAL": 13916.81517438728,
+          "state_name": "District of Columbia"
+        },
+        {
+          "CDD65": 4174.755651635413,
+          "SIZE": 0.012314514809664676,
+          "TOTAL": 14682.517626740939,
+          "state_name": "Florida"
+        },
+        {
+          "CDD65": 2018.031522651393,
+          "SIZE": 0.01769663900281619,
+          "TOTAL": 21099.590045480247,
+          "state_name": "Georgia"
+        },
+        {
+          "CDD65": 4154.25655532776,
+          "SIZE": 0.007453062672373914,
+          "TOTAL": 8886.239186171777,
+          "state_name": "Hawaii"
+        },
+        {
+          "CDD65": 667.9977478493005,
+          "SIZE": 0.021671258382859295,
+          "TOTAL": 25838.50343419687,
+          "state_name": "Idaho"
+        },
+        {
+          "CDD65": 1097.7896463750474,
+          "SIZE": 0.023033245468740197,
+          "TOTAL": 27462.391967762604,
+          "state_name": "Illinois"
+        },
+        {
+          "CDD65": 1066.577999631615,
+          "SIZE": 0.02242717509926216,
+          "TOTAL": 26739.77812381945,
+          "state_name": "Indiana"
+        },
+        {
+          "CDD65": 907.3011939705378,
+          "SIZE": 0.023999775886476078,
+          "TOTAL": 28614.780032946535,
+          "state_name": "Iowa"
+        },
+        {
+          "CDD65": 1404.347671783125,
+          "SIZE": 0.02218267535978563,
+          "TOTAL": 26448.26264066129,
+          "state_name": "Kansas"
+        },
+        {
+          "CDD65": 1314.6843216957643,
+          "SIZE": 0.018457482922575645,
+          "TOTAL": 22006.739408303667,
+          "state_name": "Kentucky"
+        },
+        {
+          "CDD65": 2968.7962412703505,
+          "SIZE": 0.016304162236324866,
+          "TOTAL": 19439.348859786893,
+          "state_name": "Louisiana"
+        },
+        {
+          "CDD65": 494.4800030011942,
+          "SIZE": 0.023872508705786978,
+          "TOTAL": 28463.040183455527,
+          "state_name": "Maine"
+        },
+        {
+          "CDD65": 1398.085817110176,
+          "SIZE": 0.01818539797080168,
+          "TOTAL": 21682.33425210077,
+          "state_name": "Maryland"
+        },
+        {
+          "CDD65": 839.536423315155,
+          "SIZE": 0.021067347548293713,
+          "TOTAL": 25118.464389984583,
+          "state_name": "Massachusetts"
+        },
+        {
+          "CDD65": 743.4300672143135,
+          "SIZE": 0.025941694172780427,
+          "TOTAL": 30930.116845565186,
+          "state_name": "Michigan"
+        },
+        {
+          "CDD65": 712.5807914184015,
+          "SIZE": 0.02408010054825528,
+          "TOTAL": 28710.55061592635,
+          "state_name": "Minnesota"
+        },
+        {
+          "CDD65": 2374.11335532445,
+          "SIZE": 0.017418167510785426,
+          "TOTAL": 20767.570257978943,
+          "state_name": "Mississippi"
+        },
+        {
+          "CDD65": 1377.6473565049257,
+          "SIZE": 0.021308765070741933,
+          "TOTAL": 25406.304965397936,
+          "state_name": "Missouri"
+        },
+        {
+          "CDD65": 379.63157781107407,
+          "SIZE": 0.021414100240698355,
+          "TOTAL": 25531.895418087726,
+          "state_name": "Montana"
+        },
+        {
+          "CDD65": 1102.5306416389176,
+          "SIZE": 0.021413298468539826,
+          "TOTAL": 25530.93947024632,
+          "state_name": "Nebraska"
+        },
+        {
+          "CDD65": 3096.2431105377723,
+          "SIZE": 0.01848682275384335,
+          "TOTAL": 22041.721102378662,
+          "state_name": "Nevada"
+        },
+        {
+          "CDD65": 672.9689771049375,
+          "SIZE": 0.023020214800351782,
+          "TOTAL": 27446.855584782174,
+          "state_name": "New Hampshire"
+        },
+        {
+          "CDD65": 1208.8379918182911,
+          "SIZE": 0.022200390261283447,
+          "TOTAL": 26469.38400496332,
+          "state_name": "New Jersey"
+        },
+        {
+          "CDD65": 1499.8434632733847,
+          "SIZE": 0.019478265005068496,
+          "TOTAL": 23223.81138807018,
+          "state_name": "New Mexico"
+        },
+        {
+          "CDD65": 1061.7808651462271,
+          "SIZE": 0.018894064269922777,
+          "TOTAL": 22527.272569943118,
+          "state_name": "New York"
+        },
+        {
+          "CDD65": 1644.5520270953173,
+          "SIZE": 0.015515034223762963,
+          "TOTAL": 18498.47655314092,
+          "state_name": "North Carolina"
+        },
+        {
+          "CDD65": 567.14954223921,
+          "SIZE": 0.021180166478001274,
+          "TOTAL": 25252.977681792174,
+          "state_name": "North Dakota"
+        },
+        {
+          "CDD65": 978.2859211185839,
+          "SIZE": 0.022458842259511575,
+          "TOTAL": 26777.53467742609,
+          "state_name": "Ohio"
+        },
+        {
+          "CDD65": 1906.8601473312472,
+          "SIZE": 0.020302124462820786,
+          "TOTAL": 24206.093775754005,
+          "state_name": "Oklahoma"
+        },
+        {
+          "CDD65": 369.2361389638445,
+          "SIZE": 0.017760566220938055,
+          "TOTAL": 21175.81006075573,
+          "state_name": "Oregon"
+        },
+        {
+          "CDD65": 988.0180645089399,
+          "SIZE": 0.021516997391547207,
+          "TOTAL": 25654.579036113344,
+          "state_name": "Pennsylvania"
+        },
+        {
+          "CDD65": 897.4582793573759,
+          "SIZE": 0.022914194161407934,
+          "TOTAL": 27320.447851781624,
+          "state_name": "Rhode Island"
+        },
+        {
+          "CDD65": 2082.87160880545,
+          "SIZE": 0.015200873225102642,
+          "TOTAL": 18123.904394045818,
+          "state_name": "South Carolina"
+        },
+        {
+          "CDD65": 833.6119349063608,
+          "SIZE": 0.021267626667555883,
+          "TOTAL": 25357.255909121588,
+          "state_name": "South Dakota"
+        },
+        {
+          "CDD65": 1538.5070977587457,
+          "SIZE": 0.0169501776217027,
+          "TOTAL": 20209.5888919408,
+          "state_name": "Tennessee"
+        },
+        {
+          "CDD65": 3132.2715447253845,
+          "SIZE": 0.0158428096916445,
+          "TOTAL": 18889.28115723356,
+          "state_name": "Texas"
+        },
+        {
+          "CDD65": 1311.4740467457016,
+          "SIZE": 0.022019172432250177,
+          "TOTAL": 26253.31914084277,
+          "state_name": "Utah"
+        },
+        {
+          "CDD65": 574.1438838037897,
+          "SIZE": 0.024139378695812185,
+          "TOTAL": 28781.227573958164,
+          "state_name": "Vermont"
+        },
+        {
+          "CDD65": 1413.3829276979984,
+          "SIZE": 0.0183453734849359,
+          "TOTAL": 21873.07203937268,
+          "state_name": "Virginia"
+        },
+        {
+          "CDD65": 291.2058975687432,
+          "SIZE": 0.017003408882377186,
+          "TOTAL": 20273.056185230616,
+          "state_name": "Washington"
+        },
+        {
+          "CDD65": 979.8560497826144,
+          "SIZE": 0.020258599922151378,
+          "TOTAL": 24154.19974294381,
+          "state_name": "West Virginia"
+        },
+        {
+          "CDD65": 632.4633168638096,
+          "SIZE": 0.022669403590278768,
+          "TOTAL": 27028.585611895145,
+          "state_name": "Wisconsin"
+        },
+        {
+          "CDD65": 508.55323564291206,
+          "SIZE": 0.021935846894783503,
+          "TOTAL": 26153.970632881097,
+          "state_name": "Wyoming"
+        }
+      ]
+    },
+    {
+      "name": "source_0_concat_0_x_domain_HDD65",
+      "values": [{"min": 6.737509661109087, "max": 10812.781552542732}]
+    },
+    {
+      "name": "source_0_concat_0_y_domain_TOTAL",
+      "values": [{"min": 8886.239186171777, "max": 30930.116845565186}]
+    },
+    {
+      "name": "source_1_concat_1_x_domain_CDD65",
+      "values": [{"min": 2.341855107807501, "max": 4426.577482314403}]
+    },
+    {
+      "name": "source_1_concat_1_y_domain_TOTAL",
+      "values": [{"min": 8886.239186171777, "max": 30930.116845565186}]
+    }
+  ],
+  "signals": [{"name": "childHeight", "value": 400}],
+  "marks": [
+    {
+      "type": "group",
+      "name": "concat_0_group",
+      "encode": {
+        "update": {
+          "width": {"signal": "width"},
+          "height": {"signal": "childHeight"}
+        }
+      },
+      "marks": [
+        {
+          "type": "symbol",
+          "name": "concat_0_marks",
+          "from": {"data": "source_0"},
+          "encode": {
+            "update": {
+              "opacity": {"value": 0.7},
+              "x": {"field": "HDD65", "scale": "concat_0_x"},
+              "shape": {"value": "circle"},
+              "size": {"field": "SIZE", "scale": "size"},
+              "fill": {"value": "#4c78a8"},
+              "tooltip": {
+                "signal": "{\"State\": isValid(datum[\"state_name\"]) ? datum[\"state_name\"] : \"\"+datum[\"state_name\"], \"State/US kWh\": format(datum[\"SIZE\"], \".1%\")}"
+              },
+              "y": {"field": "TOTAL", "scale": "concat_0_y"}
+            }
+          },
+          "style": ["circle"]
+        }
+      ],
+      "axes": [
+        {
+          "scale": "concat_0_x",
+          "gridScale": "concat_0_y",
+          "aria": false,
+          "domain": false,
+          "orient": "bottom",
+          "labels": false,
+          "maxExtent": 0,
+          "minExtent": 0,
+          "tickCount": {"signal": "ceil(width/40)"},
+          "grid": true,
+          "zindex": 0,
+          "ticks": false
+        },
+        {
+          "scale": "concat_0_y",
+          "gridScale": "concat_0_x",
+          "maxExtent": 0,
+          "minExtent": 0,
+          "ticks": false,
+          "tickCount": {"signal": "ceil(childHeight/40)"},
+          "domain": false,
+          "aria": false,
+          "zindex": 0,
+          "labels": false,
+          "orient": "left",
+          "grid": true
+        },
+        {
+          "scale": "concat_0_x",
+          "grid": false,
+          "title": "Heating Degree Days",
+          "labelFlush": true,
+          "tickCount": {"signal": "ceil(width/40)"},
+          "orient": "bottom",
+          "labelOverlap": true,
+          "zindex": 0
+        },
+        {
+          "scale": "concat_0_y",
+          "zindex": 0,
+          "tickCount": {"signal": "ceil(childHeight/40)"},
+          "grid": false,
+          "orient": "left",
+          "labelOverlap": true,
+          "title": "kWh/Household"
+        }
+      ],
+      "title": {
+        "text": "Energy vs. HDD (Corr: 0.84)",
+        "align": "center",
+        "fontSize": 15,
+        "color": "black",
+        "fontWeight": "bold",
+        "frame": "group"
+      },
+      "style": "cell"
+    },
+    {
+      "type": "group",
+      "name": "concat_1_group",
+      "encode": {
+        "update": {
+          "width": {"signal": "width"},
+          "height": {"signal": "childHeight"}
+        }
+      },
+      "marks": [
+        {
+          "type": "symbol",
+          "name": "concat_1_marks",
+          "from": {"data": "source_1"},
+          "encode": {
+            "update": {
+              "y": {"field": "TOTAL", "scale": "concat_1_y"},
+              "size": {"field": "SIZE", "scale": "size"},
+              "shape": {"value": "circle"},
+              "fill": {"value": "#4c78a8"},
+              "opacity": {"value": 0.7},
+              "x": {"field": "CDD65", "scale": "concat_1_x"},
+              "tooltip": {
+                "signal": "{\"State\": isValid(datum[\"state_name\"]) ? datum[\"state_name\"] : \"\"+datum[\"state_name\"], \"State/US kWh\": format(datum[\"SIZE\"], \".1%\")}"
+              }
+            }
+          },
+          "style": ["circle"]
+        }
+      ],
+      "axes": [
+        {
+          "scale": "concat_1_x",
+          "domain": false,
+          "labels": false,
+          "minExtent": 0,
+          "orient": "bottom",
+          "aria": false,
+          "zindex": 0,
+          "gridScale": "concat_1_y",
+          "tickCount": {"signal": "ceil(width/40)"},
+          "maxExtent": 0,
+          "ticks": false,
+          "grid": true
+        },
+        {
+          "scale": "concat_1_y",
+          "gridScale": "concat_1_x",
+          "zindex": 0,
+          "grid": true,
+          "aria": false,
+          "domain": false,
+          "labels": false,
+          "maxExtent": 0,
+          "orient": "left",
+          "ticks": false,
+          "tickCount": {"signal": "ceil(childHeight/40)"},
+          "minExtent": 0
+        },
+        {
+          "scale": "concat_1_x",
+          "title": "Cooling Degree Days",
+          "orient": "bottom",
+          "labelFlush": true,
+          "labelOverlap": true,
+          "zindex": 0,
+          "grid": false,
+          "tickCount": {"signal": "ceil(width/40)"}
+        },
+        {
+          "scale": "concat_1_y",
+          "tickCount": {"signal": "ceil(childHeight/40)"},
+          "orient": "left",
+          "grid": false,
+          "title": "kWh/Household",
+          "zindex": 0,
+          "labelOverlap": true
+        }
+      ],
+      "title": {
+        "text": "Energy vs. CDD (Corr: -0.73)",
+        "align": "center",
+        "fontWeight": "bold",
+        "color": "black",
+        "fontSize": 15,
+        "frame": "group"
+      },
+      "style": "cell"
+    }
+  ],
+  "scales": [
+    {
+      "name": "size",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "source_0", "field": "SIZE"},
+          {"data": "source_1", "field": "SIZE"}
+        ]
+      },
+      "range": [20, 1000],
+      "zero": true
+    },
+    {
+      "name": "concat_0_x",
+      "type": "linear",
+      "domain": [
+        {"signal": "(data(\"source_0_concat_0_x_domain_HDD65\")[0] || {}).min"},
+        {"signal": "(data(\"source_0_concat_0_x_domain_HDD65\")[0] || {}).max"}
+      ],
+      "range": [0, {"signal": "width"}],
+      "zero": true,
+      "nice": true
+    },
+    {
+      "name": "concat_0_y",
+      "type": "linear",
+      "domain": [
+        {"signal": "(data(\"source_0_concat_0_y_domain_TOTAL\")[0] || {}).min"},
+        {"signal": "(data(\"source_0_concat_0_y_domain_TOTAL\")[0] || {}).max"}
+      ],
+      "range": [{"signal": "childHeight"}, 0],
+      "zero": true,
+      "nice": true
+    },
+    {
+      "name": "concat_1_x",
+      "type": "linear",
+      "domain": [
+        {"signal": "(data(\"source_1_concat_1_x_domain_CDD65\")[0] || {}).min"},
+        {"signal": "(data(\"source_1_concat_1_x_domain_CDD65\")[0] || {}).max"}
+      ],
+      "range": [0, {"signal": "width"}],
+      "zero": true,
+      "nice": true
+    },
+    {
+      "name": "concat_1_y",
+      "type": "linear",
+      "domain": [
+        {"signal": "(data(\"source_1_concat_1_y_domain_TOTAL\")[0] || {}).min"},
+        {"signal": "(data(\"source_1_concat_1_y_domain_TOTAL\")[0] || {}).max"}
+      ],
+      "range": [{"signal": "childHeight"}, 0],
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "layout": {"padding": 20, "columns": 1, "bounds": "full", "align": "each"},
+  "padding": 5,
+  "width": 800,
+  "background": "white"
+}

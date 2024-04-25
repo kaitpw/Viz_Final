@@ -1,0 +1,280 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "data": [
+      {
+        "name": "source_1",
+        "values": [
+          {"CDD65": 2168.175713432476, "state_name": "Alabama", "STATE_FIPS": 1},
+          {"CDD65": 2.341855107807501, "state_name": "Alaska", "STATE_FIPS": 2},
+          {"CDD65": 4426.577482314403, "state_name": "Arizona", "STATE_FIPS": 4},
+          {
+            "CDD65": 1719.7665226122704,
+            "state_name": "Arkansas",
+            "STATE_FIPS": 5
+          },
+          {
+            "CDD65": 1537.3444314534406,
+            "state_name": "California",
+            "STATE_FIPS": 6
+          },
+          {"CDD65": 909.8996462020099, "state_name": "Colorado", "STATE_FIPS": 8},
+          {
+            "CDD65": 984.0885093494464,
+            "state_name": "Connecticut",
+            "STATE_FIPS": 9
+          },
+          {
+            "CDD65": 1319.124994462421,
+            "state_name": "Delaware",
+            "STATE_FIPS": 10
+          },
+          {
+            "CDD65": 1535.4400910974907,
+            "state_name": "District of Columbia",
+            "STATE_FIPS": 11
+          },
+          {"CDD65": 4174.755651635413, "state_name": "Florida", "STATE_FIPS": 12},
+          {"CDD65": 2018.031522651393, "state_name": "Georgia", "STATE_FIPS": 13},
+          {"CDD65": 4154.25655532776, "state_name": "Hawaii", "STATE_FIPS": 15},
+          {"CDD65": 667.9977478493005, "state_name": "Idaho", "STATE_FIPS": 16},
+          {
+            "CDD65": 1097.7896463750474,
+            "state_name": "Illinois",
+            "STATE_FIPS": 17
+          },
+          {"CDD65": 1066.577999631615, "state_name": "Indiana", "STATE_FIPS": 18},
+          {"CDD65": 907.3011939705378, "state_name": "Iowa", "STATE_FIPS": 19},
+          {"CDD65": 1404.347671783125, "state_name": "Kansas", "STATE_FIPS": 20},
+          {
+            "CDD65": 1314.6843216957643,
+            "state_name": "Kentucky",
+            "STATE_FIPS": 21
+          },
+          {
+            "CDD65": 2968.7962412703505,
+            "state_name": "Louisiana",
+            "STATE_FIPS": 22
+          },
+          {"CDD65": 494.4800030011942, "state_name": "Maine", "STATE_FIPS": 23},
+          {
+            "CDD65": 1398.085817110176,
+            "state_name": "Maryland",
+            "STATE_FIPS": 24
+          },
+          {
+            "CDD65": 839.536423315155,
+            "state_name": "Massachusetts",
+            "STATE_FIPS": 25
+          },
+          {
+            "CDD65": 743.4300672143135,
+            "state_name": "Michigan",
+            "STATE_FIPS": 26
+          },
+          {
+            "CDD65": 712.5807914184015,
+            "state_name": "Minnesota",
+            "STATE_FIPS": 27
+          },
+          {
+            "CDD65": 2374.11335532445,
+            "state_name": "Mississippi",
+            "STATE_FIPS": 28
+          },
+          {
+            "CDD65": 1377.6473565049257,
+            "state_name": "Missouri",
+            "STATE_FIPS": 29
+          },
+          {
+            "CDD65": 379.63157781107407,
+            "state_name": "Montana",
+            "STATE_FIPS": 30
+          },
+          {
+            "CDD65": 1102.5306416389176,
+            "state_name": "Nebraska",
+            "STATE_FIPS": 31
+          },
+          {"CDD65": 3096.2431105377723, "state_name": "Nevada", "STATE_FIPS": 32},
+          {
+            "CDD65": 672.9689771049375,
+            "state_name": "New Hampshire",
+            "STATE_FIPS": 33
+          },
+          {
+            "CDD65": 1208.8379918182911,
+            "state_name": "New Jersey",
+            "STATE_FIPS": 34
+          },
+          {
+            "CDD65": 1499.8434632733847,
+            "state_name": "New Mexico",
+            "STATE_FIPS": 35
+          },
+          {
+            "CDD65": 1061.7808651462271,
+            "state_name": "New York",
+            "STATE_FIPS": 36
+          },
+          {
+            "CDD65": 1644.5520270953173,
+            "state_name": "North Carolina",
+            "STATE_FIPS": 37
+          },
+          {
+            "CDD65": 567.14954223921,
+            "state_name": "North Dakota",
+            "STATE_FIPS": 38
+          },
+          {"CDD65": 978.2859211185839, "state_name": "Ohio", "STATE_FIPS": 39},
+          {
+            "CDD65": 1906.8601473312472,
+            "state_name": "Oklahoma",
+            "STATE_FIPS": 40
+          },
+          {"CDD65": 369.2361389638445, "state_name": "Oregon", "STATE_FIPS": 41},
+          {
+            "CDD65": 988.0180645089399,
+            "state_name": "Pennsylvania",
+            "STATE_FIPS": 42
+          },
+          {
+            "CDD65": 897.4582793573759,
+            "state_name": "Rhode Island",
+            "STATE_FIPS": 44
+          },
+          {
+            "CDD65": 2082.87160880545,
+            "state_name": "South Carolina",
+            "STATE_FIPS": 45
+          },
+          {
+            "CDD65": 833.6119349063608,
+            "state_name": "South Dakota",
+            "STATE_FIPS": 46
+          },
+          {
+            "CDD65": 1538.5070977587457,
+            "state_name": "Tennessee",
+            "STATE_FIPS": 47
+          },
+          {"CDD65": 3132.2715447253845, "state_name": "Texas", "STATE_FIPS": 48},
+          {"CDD65": 1311.4740467457016, "state_name": "Utah", "STATE_FIPS": 49},
+          {"CDD65": 574.1438838037897, "state_name": "Vermont", "STATE_FIPS": 50},
+          {
+            "CDD65": 1413.3829276979984,
+            "state_name": "Virginia",
+            "STATE_FIPS": 51
+          },
+          {
+            "CDD65": 291.2058975687432,
+            "state_name": "Washington",
+            "STATE_FIPS": 53
+          },
+          {
+            "CDD65": 979.8560497826144,
+            "state_name": "West Virginia",
+            "STATE_FIPS": 54
+          },
+          {
+            "CDD65": 632.4633168638096,
+            "state_name": "Wisconsin",
+            "STATE_FIPS": 55
+          },
+          {"CDD65": 508.55323564291206, "state_name": "Wyoming", "STATE_FIPS": 56}
+        ]
+      },
+      {
+        "name": "source_0",
+        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json",
+        "format": {"type": "topojson", "feature": "states"},
+        "transform": [
+          {
+            "type": "lookup",
+            "from": "source_1",
+            "fields": ["id"],
+            "key": "STATE_FIPS",
+            "values": ["CDD65", "state_name"]
+          },
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"CDD65\"]) && isFinite(+datum[\"CDD65\"])"
+          }
+        ]
+      },
+      {
+        "name": "source_0_color_domain_CDD65",
+        "source": "source_0",
+        "transform": [
+          {"type": "formula", "expr": "+datum['CDD65']", "as": "CDD65"},
+          {
+            "type": "aggregate",
+            "groupby": [],
+            "fields": ["CDD65", "CDD65"],
+            "ops": ["min", "max"],
+            "as": ["min", "max"]
+          }
+        ]
+      }
+    ],
+    "marks": [
+      {
+        "type": "shape",
+        "name": "marks",
+        "from": {"data": "source_0"},
+        "encode": {
+          "update": {
+            "tooltip": {
+              "signal": "{\"State\": isValid(datum[\"state_name\"]) ? datum[\"state_name\"] : \"\"+datum[\"state_name\"], \"Avg CDD\": format(datum[\"CDD65\"], \".2f\")}"
+            },
+            "fill": {"field": "CDD65", "scale": "color"},
+            "stroke": {"value": "white"}
+          }
+        },
+        "transform": [{"type": "geoshape", "projection": "projection"}],
+        "style": ["geoshape"]
+      }
+    ],
+    "scales": [
+      {
+        "name": "color",
+        "type": "linear",
+        "domain": [
+          {"signal": "(data(\"source_0_color_domain_CDD65\")[0] || {}).min"},
+          {"signal": "(data(\"source_0_color_domain_CDD65\")[0] || {}).max"}
+        ],
+        "range": {"scheme": "purpleblue"},
+        "zero": false,
+        "interpolate": "hcl"
+      }
+    ],
+    "projections": [
+      {
+        "name": "projection",
+        "fit": {"signal": "data('source_0')"},
+        "type": "albersUsa",
+        "size": {"signal": "[width, height]"}
+      }
+    ],
+    "title": {
+      "text": "Annual Cooling Degree Days (CDD) by State ",
+      "fontSize": 15,
+      "fontWeight": "bold",
+      "frame": "group",
+      "align": "center",
+      "color": "black"
+    },
+    "background": "white",
+    "legends": [
+      {
+        "title": "CDD/Household",
+        "fill": "color",
+        "gradientLength": {"signal": "clamp(height, 64, 200)"}
+      }
+    ],
+    "style": "view",
+    "width": 350,
+    "height": 250,
+    "padding": 5
+  }
