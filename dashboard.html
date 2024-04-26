@@ -129,7 +129,7 @@ body, button{
 
     <div class="h2">Exploring Energy Per Household Per State</div>
     <div class="p">
-      Taking a look at the distribution of energy consumption among every state, we can see that Northern regions have noticeably higher consumption. Mean consumption across the entire US is ~23500 kWh.
+      Taking a look at the distribution of energy consumption among every state, we can see that Northern regions have noticeably higher consumption. Mean consumption across the entire US is ~23000 kWh.
     </div>
     <div id="viz1_0"></div>
 
@@ -189,110 +189,110 @@ body, button{
   </thead>
     <tbody>
       <tr>
-        <th># Windows</th>
-        <td>0.54</td>
+        <td># sqft. (Energy Consuming)</td>
+        <td>0.53</td>
+        <td>0.03</td>
+        <td>True</td>
+    </tr>
+      <tr>
+        <td># Windows</td>
+        <td>0.53</td>
         <td>0.02</td>
         <td>True</td>
     </tr>
       <tr>
-        <th>Has Basement</th>
-        <td>0.54</td>
-        <td>0.00</td>
-        <td>True</td>
-    </tr>
-      <tr>
-        <th># Rooms</th>
+        <td># Rooms</td>
         <td>0.53</td>
         <td>0.01</td>
         <td>True</td>
     </tr>
       <tr>
-        <th>Total Energy Consuming sqft.</th>
-        <td>0.53</td>
-        <td>0.04</td>
+        <td>Has Basement</td>
+        <td>0.52</td>
+        <td>0.00</td>
         <td>True</td>
     </tr>
       <tr>
-        <th># Bedrooms</th>
+        <td># Bedrooms</td>
         <td>0.50</td>
         <td>0.01</td>
         <td>True</td>
     </tr>
       <tr>
-        <th># Stories</th>
-        <td>0.48</td>
+        <td># Stories</td>
+        <td>0.46</td>
         <td>0.01</td>
         <td>True</td>
     </tr>
       <tr>
-        <th>Has Swimming Pool</th>
-        <td>0.47</td>
+        <td>Has Swimming Pool</td>
+        <td>0.46</td>
         <td>0.00</td>
         <td>True</td>
     </tr>
       <tr>
-        <th>Has Heating in Basement</th>
-        <td>0.47</td>
+        <td>Has Basement Heating</td>
+        <td>0.46</td>
         <td>0.00</td>
         <td>True</td>
     </tr>
       <tr>
-        <th>Electric-only House</th>
-        <td>0.47</td>
+        <td>Has Attached Garage</td>
+        <td>0.45</td>
         <td>0.00</td>
         <td>True</td>
     </tr>
       <tr>
-        <th>Is Studio Apartment</th>
-        <td>0.47</td>
+        <td>Has Attic Fan</td>
+        <td>0.45</td>
         <td>0.00</td>
         <td>True</td>
     </tr>
       <tr>
-        <th>Has Crawlspace</th>
-        <td>0.43</td>
+        <td>Has Crawlspace</td>
+        <td>0.41</td>
         <td>0.02</td>
         <td>False</td>
     </tr>
       <tr>
-        <th>First Percentile Temperature</th>
-        <td>0.36</td>
+        <td>First Percentile Temperature</td>
+        <td>0.33</td>
         <td>0.02</td>
         <td>False</td>
     </tr>
       <tr>
-        <th>Heating Degree Days</th>
-        <td>0.36</td>
+        <td>Heating Degree Days</td>
+        <td>0.33</td>
+        <td>0.02</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <td># Residents</td>
+        <td>0.28</td>
+        <td>0.02</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <td>Water Heating Fuel</td>
+        <td>0.25</td>
         <td>0.03</td>
         <td>False</td>
     </tr>
       <tr>
-        <th>Num. Residents</th>
-        <td>0.27</td>
-        <td>0.02</td>
-        <td>False</td>
-    </tr>
-      <tr>
-        <th>Water Heating Fuel</th>
-        <td>0.23</td>
-        <td>0.03</td>
-        <td>False</td>
-    </tr>
-      <tr>
-        <th>Thermostate Temp. When Home</th>
-        <td>0.20</td>
-        <td>0.02</td>
-        <td>False</td>
-    </tr>
-      <tr>
-        <th>Space Heating Fuel</th>
-        <td>0.19</td>
+        <td>Space Heating Fuel</td>
+        <td>0.25</td>
         <td>0.04</td>
         <td>False</td>
     </tr>
       <tr>
-        <th>Year Built</th>
-        <td>0.13</td>
+        <td>Thermostate Temp. When Home</td>
+        <td>0.19</td>
+        <td>0.02</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <td>Year Built</td>
+        <td>0.12</td>
         <td>0.04</td>
         <td>False</td>
     </tr>
@@ -310,42 +310,42 @@ body, button{
     <col style="width: 17%;">
     <col style="width: 17%;">
   </colgroup>
-  <thead>
+    <thead>
       <tr style="text-align: right;">
         <th></th>
-        <th>Correlation</th>
-        <th>XGBoost Imp.</th>
-        <th>KBest of 10</th>
+        <th>Corr</th>
+        <th>Imp</th>
+        <th>KBest</th>
     </tr>
   </thead>
     <tbody>
       <tr>
-        <th>Heating Degree Days</th>
-        <td>0.36</td>
-        <td>0.03</td>
-        <td>False</td>
-    </tr>
-      <tr>
-        <th>99th Percentile Temperature</th>
-        <td>0.36</td>
+        <td>Heating Degree Days</td>
+        <td>0.33</td>
         <td>0.02</td>
         <td>False</td>
     </tr>
       <tr>
-        <th>Cooling Degree Days</th>
-        <td>0.27</td>
+        <td>99th Percentile Temperature</td>
+        <td>0.33</td>
+        <td>0.02</td>
+        <td>False</td>
+    </tr>
+      <tr>
+        <td>Cooling Degree Days</td>
+        <td>0.24</td>
         <td>0.00</td>
         <td>False</td>
     </tr>
       <tr>
-        <th>1st Percentile Temperature</th>
-        <td>0.13</td>
+        <td>1st Percentile Temperature</td>
+        <td>0.11</td>
         <td>0.01</td>
         <td>False</td>
     </tr>
       <tr>
-        <th>Avg. Ground Water Temperature</th>
-        <td>0.34</td>
+        <td>Avg. Ground Water Temperature</td>
+        <td>0.31</td>
         <td>0.01</td>
         <td>False</td>
     </tr>
@@ -367,7 +367,7 @@ body, button{
 </div>
 
 <div class="p">
-  To wrap up, one last chart shows the remarkable potential of electrification: a <strong>38%</strong> reduction in energy consumption (from electrifying space heating alone!), bringing the current mean of ~23500 kWh to an electrified mean of ~14500. 
+  To wrap up, one last chart shows the remarkable potential of electrification: a <strong>26%</strong> reduction in energy consumption (from electrifying space heating alone!), bringing the current mean of ~23000 kWh to an electrified mean of ~16500. 
 </div>
 
 <div id="viz7_0"></div>

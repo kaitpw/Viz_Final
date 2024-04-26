@@ -1,296 +1,296 @@
 {
-    "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "data": [
-      {
-        "name": "source_1",
-        "values": [
-          {"KWHCOL": 2878.960346962171, "state_name": "Alabama", "STATE_FIPS": 1},
-          {"KWHCOL": 12.345104424124068, "state_name": "Alaska", "STATE_FIPS": 2},
-          {"KWHCOL": 4742.685451934171, "state_name": "Arizona", "STATE_FIPS": 4},
-          {
-            "KWHCOL": 2508.1859791130205,
-            "state_name": "Arkansas",
-            "STATE_FIPS": 5
-          },
-          {
-            "KWHCOL": 1182.1543418351093,
-            "state_name": "California",
-            "STATE_FIPS": 6
-          },
-          {
-            "KWHCOL": 1015.2618676822307,
-            "state_name": "Colorado",
-            "STATE_FIPS": 8
-          },
-          {
-            "KWHCOL": 991.9637210430272,
-            "state_name": "Connecticut",
-            "STATE_FIPS": 9
-          },
-          {
-            "KWHCOL": 1738.6014770043948,
-            "state_name": "Delaware",
-            "STATE_FIPS": 10
-          },
-          {
-            "KWHCOL": 1325.8537828707217,
-            "state_name": "District of Columbia",
-            "STATE_FIPS": 11
-          },
-          {
-            "KWHCOL": 4157.5665087982115,
-            "state_name": "Florida",
-            "STATE_FIPS": 12
-          },
-          {"KWHCOL": 2753.11202966913, "state_name": "Georgia", "STATE_FIPS": 13},
-          {"KWHCOL": 1605.597567216623, "state_name": "Hawaii", "STATE_FIPS": 15},
-          {"KWHCOL": 998.7376315003338, "state_name": "Idaho", "STATE_FIPS": 16},
-          {
-            "KWHCOL": 1397.2888077866767,
-            "state_name": "Illinois",
-            "STATE_FIPS": 17
-          },
-          {
-            "KWHCOL": 1607.3410671193205,
-            "state_name": "Indiana",
-            "STATE_FIPS": 18
-          },
-          {"KWHCOL": 1417.190227637539, "state_name": "Iowa", "STATE_FIPS": 19},
-          {
-            "KWHCOL": 2361.2565731978793,
-            "state_name": "Kansas",
-            "STATE_FIPS": 20
-          },
-          {
-            "KWHCOL": 2143.517812794355,
-            "state_name": "Kentucky",
-            "STATE_FIPS": 21
-          },
-          {
-            "KWHCOL": 4034.6895237045946,
-            "state_name": "Louisiana",
-            "STATE_FIPS": 22
-          },
-          {"KWHCOL": 530.0272151066869, "state_name": "Maine", "STATE_FIPS": 23},
-          {
-            "KWHCOL": 1676.7875771605916,
-            "state_name": "Maryland",
-            "STATE_FIPS": 24
-          },
-          {
-            "KWHCOL": 1034.69151587348,
-            "state_name": "Massachusetts",
-            "STATE_FIPS": 25
-          },
-          {
-            "KWHCOL": 1006.006245759641,
-            "state_name": "Michigan",
-            "STATE_FIPS": 26
-          },
-          {
-            "KWHCOL": 955.5689836798841,
-            "state_name": "Minnesota",
-            "STATE_FIPS": 27
-          },
-          {
-            "KWHCOL": 3402.673370620179,
-            "state_name": "Mississippi",
-            "STATE_FIPS": 28
-          },
-          {
-            "KWHCOL": 2109.023635994373,
-            "state_name": "Missouri",
-            "STATE_FIPS": 29
-          },
-          {
-            "KWHCOL": 499.9647975161436,
-            "state_name": "Montana",
-            "STATE_FIPS": 30
-          },
-          {
-            "KWHCOL": 1560.8671459756629,
-            "state_name": "Nebraska",
-            "STATE_FIPS": 31
-          },
-          {"KWHCOL": 3272.721208079485, "state_name": "Nevada", "STATE_FIPS": 32},
-          {
-            "KWHCOL": 716.6599393703531,
-            "state_name": "New Hampshire",
-            "STATE_FIPS": 33
-          },
-          {
-            "KWHCOL": 1563.201467749994,
-            "state_name": "New Jersey",
-            "STATE_FIPS": 34
-          },
-          {
-            "KWHCOL": 1494.2404031199621,
-            "state_name": "New Mexico",
-            "STATE_FIPS": 35
-          },
-          {
-            "KWHCOL": 1065.7100611238611,
-            "state_name": "New York",
-            "STATE_FIPS": 36
-          },
-          {
-            "KWHCOL": 2220.881133349974,
-            "state_name": "North Carolina",
-            "STATE_FIPS": 37
-          },
-          {
-            "KWHCOL": 722.1844662299891,
-            "state_name": "North Dakota",
-            "STATE_FIPS": 38
-          },
-          {"KWHCOL": 1395.4231440889216, "state_name": "Ohio", "STATE_FIPS": 39},
-          {
-            "KWHCOL": 2880.7883762439747,
-            "state_name": "Oklahoma",
-            "STATE_FIPS": 40
-          },
-          {"KWHCOL": 757.8803253056711, "state_name": "Oregon", "STATE_FIPS": 41},
-          {
-            "KWHCOL": 1369.9471236119794,
-            "state_name": "Pennsylvania",
-            "STATE_FIPS": 42
-          },
-          {
-            "KWHCOL": 974.7421751459077,
-            "state_name": "Rhode Island",
-            "STATE_FIPS": 44
-          },
-          {
-            "KWHCOL": 2859.381583083812,
-            "state_name": "South Carolina",
-            "STATE_FIPS": 45
-          },
-          {
-            "KWHCOL": 1202.5065331941037,
-            "state_name": "South Dakota",
-            "STATE_FIPS": 46
-          },
-          {
-            "KWHCOL": 2339.164419221659,
-            "state_name": "Tennessee",
-            "STATE_FIPS": 47
-          },
-          {"KWHCOL": 3696.4093011445016, "state_name": "Texas", "STATE_FIPS": 48},
-          {"KWHCOL": 1612.480521607335, "state_name": "Utah", "STATE_FIPS": 49},
-          {"KWHCOL": 451.15502063047, "state_name": "Vermont", "STATE_FIPS": 50},
-          {
-            "KWHCOL": 2063.411934854473,
-            "state_name": "Virginia",
-            "STATE_FIPS": 51
-          },
-          {
-            "KWHCOL": 466.1030059618275,
-            "state_name": "Washington",
-            "STATE_FIPS": 53
-          },
-          {
-            "KWHCOL": 1461.1231176090923,
-            "state_name": "West Virginia",
-            "STATE_FIPS": 54
-          },
-          {
-            "KWHCOL": 863.1721877863471,
-            "state_name": "Wisconsin",
-            "STATE_FIPS": 55
-          },
-          {"KWHCOL": 657.7138989982074, "state_name": "Wyoming", "STATE_FIPS": 56}
-        ]
-      },
-      {
-        "name": "source_0",
-        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json",
-        "format": {"type": "topojson", "feature": "states"},
-        "transform": [
-          {
-            "type": "lookup",
-            "from": "source_1",
-            "fields": ["id"],
-            "key": "STATE_FIPS",
-            "values": ["KWHCOL", "state_name"]
-          },
-          {
-            "type": "filter",
-            "expr": "isValid(datum[\"KWHCOL\"]) && isFinite(+datum[\"KWHCOL\"])"
-          }
-        ]
-      },
-      {
-        "name": "source_0_color_domain_KWHCOL",
-        "source": "source_0",
-        "transform": [
-          {"type": "formula", "expr": "+datum['KWHCOL']", "as": "KWHCOL"},
-          {
-            "type": "aggregate",
-            "groupby": [],
-            "fields": ["KWHCOL", "KWHCOL"],
-            "ops": ["min", "max"],
-            "as": ["min", "max"]
-          }
-        ]
-      }
-    ],
-    "marks": [
-      {
-        "type": "shape",
-        "name": "marks",
-        "from": {"data": "source_0"},
-        "encode": {
-          "update": {
-            "stroke": {"value": "white"},
-            "fill": {"field": "KWHCOL", "scale": "color"},
-            "tooltip": {
-              "signal": "{\"State\": isValid(datum[\"state_name\"]) ? datum[\"state_name\"] : \"\"+datum[\"state_name\"], \"Avg kWh\": format(datum[\"KWHCOL\"], \".2f\")}"
-            }
-          }
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "data": [
+    {
+      "name": "source_1",
+      "values": [
+        {"KWHCOL": 2878.960346962171, "state_name": "Alabama", "STATE_FIPS": 1},
+        {"KWHCOL": 14.312637241951393, "state_name": "Alaska", "STATE_FIPS": 2},
+        {"KWHCOL": 4748.542802237215, "state_name": "Arizona", "STATE_FIPS": 4},
+        {
+          "KWHCOL": 2617.748794630123,
+          "state_name": "Arkansas",
+          "STATE_FIPS": 5
         },
-        "transform": [{"type": "geoshape", "projection": "projection"}],
-        "style": ["geoshape"]
-      }
-    ],
-    "scales": [
-      {
-        "name": "color",
-        "type": "linear",
-        "domain": [
-          {"signal": "(data(\"source_0_color_domain_KWHCOL\")[0] || {}).min"},
-          {"signal": "(data(\"source_0_color_domain_KWHCOL\")[0] || {}).max"}
-        ],
-        "range": {"scheme": "purpleblue"},
-        "interpolate": "hcl",
-        "zero": false
-      }
-    ],
-    "projections": [
-      {
-        "name": "projection",
-        "type": "albersUsa",
-        "fit": {"signal": "data('source_0')"},
-        "size": {"signal": "[width, height]"}
-      }
-    ],
-    "title": {
-      "text": "Annual Cooling Energy by State ",
-      "color": "black",
-      "fontSize": 15,
-      "align": "center",
-      "fontWeight": "bold",
-      "frame": "group"
+        {
+          "KWHCOL": 1182.2205576565977,
+          "state_name": "California",
+          "STATE_FIPS": 6
+        },
+        {
+          "KWHCOL": 1027.613280287379,
+          "state_name": "Colorado",
+          "STATE_FIPS": 8
+        },
+        {
+          "KWHCOL": 1004.7971704684234,
+          "state_name": "Connecticut",
+          "STATE_FIPS": 9
+        },
+        {
+          "KWHCOL": 1738.6014770043948,
+          "state_name": "Delaware",
+          "STATE_FIPS": 10
+        },
+        {
+          "KWHCOL": 1332.3362432796202,
+          "state_name": "District of Columbia",
+          "STATE_FIPS": 11
+        },
+        {"KWHCOL": 4172.59395920974, "state_name": "Florida", "STATE_FIPS": 12},
+        {
+          "KWHCOL": 2768.9447537686274,
+          "state_name": "Georgia",
+          "STATE_FIPS": 13
+        },
+        {"KWHCOL": 1605.597567216623, "state_name": "Hawaii", "STATE_FIPS": 15},
+        {"KWHCOL": 1010.4286894615265, "state_name": "Idaho", "STATE_FIPS": 16},
+        {
+          "KWHCOL": 1420.4017005545063,
+          "state_name": "Illinois",
+          "STATE_FIPS": 17
+        },
+        {
+          "KWHCOL": 1623.8163757323134,
+          "state_name": "Indiana",
+          "STATE_FIPS": 18
+        },
+        {"KWHCOL": 1410.52403289898, "state_name": "Iowa", "STATE_FIPS": 19},
+        {"KWHCOL": 2363.614607799386, "state_name": "Kansas", "STATE_FIPS": 20},
+        {
+          "KWHCOL": 2149.7057671702987,
+          "state_name": "Kentucky",
+          "STATE_FIPS": 21
+        },
+        {
+          "KWHCOL": 4034.505857430511,
+          "state_name": "Louisiana",
+          "STATE_FIPS": 22
+        },
+        {"KWHCOL": 533.1940416018052, "state_name": "Maine", "STATE_FIPS": 23},
+        {
+          "KWHCOL": 1711.9790793836673,
+          "state_name": "Maryland",
+          "STATE_FIPS": 24
+        },
+        {
+          "KWHCOL": 1045.6602159706665,
+          "state_name": "Massachusetts",
+          "STATE_FIPS": 25
+        },
+        {
+          "KWHCOL": 1019.7426224834644,
+          "state_name": "Michigan",
+          "STATE_FIPS": 26
+        },
+        {
+          "KWHCOL": 963.8559597764124,
+          "state_name": "Minnesota",
+          "STATE_FIPS": 27
+        },
+        {
+          "KWHCOL": 3402.673370620179,
+          "state_name": "Mississippi",
+          "STATE_FIPS": 28
+        },
+        {
+          "KWHCOL": 2140.3812729657807,
+          "state_name": "Missouri",
+          "STATE_FIPS": 29
+        },
+        {
+          "KWHCOL": 503.0829891922276,
+          "state_name": "Montana",
+          "STATE_FIPS": 30
+        },
+        {
+          "KWHCOL": 1555.9132844502012,
+          "state_name": "Nebraska",
+          "STATE_FIPS": 31
+        },
+        {
+          "KWHCOL": 3349.9366371058973,
+          "state_name": "Nevada",
+          "STATE_FIPS": 32
+        },
+        {
+          "KWHCOL": 738.2425903684334,
+          "state_name": "New Hampshire",
+          "STATE_FIPS": 33
+        },
+        {
+          "KWHCOL": 1586.5667983760914,
+          "state_name": "New Jersey",
+          "STATE_FIPS": 34
+        },
+        {
+          "KWHCOL": 1491.0123834920018,
+          "state_name": "New Mexico",
+          "STATE_FIPS": 35
+        },
+        {
+          "KWHCOL": 1074.5465612786006,
+          "state_name": "New York",
+          "STATE_FIPS": 36
+        },
+        {
+          "KWHCOL": 2231.4182991494376,
+          "state_name": "North Carolina",
+          "STATE_FIPS": 37
+        },
+        {
+          "KWHCOL": 743.135921046241,
+          "state_name": "North Dakota",
+          "STATE_FIPS": 38
+        },
+        {"KWHCOL": 1382.9862038558026, "state_name": "Ohio", "STATE_FIPS": 39},
+        {
+          "KWHCOL": 2941.634872399964,
+          "state_name": "Oklahoma",
+          "STATE_FIPS": 40
+        },
+        {"KWHCOL": 760.8540792138047, "state_name": "Oregon", "STATE_FIPS": 41},
+        {
+          "KWHCOL": 1381.9480932500123,
+          "state_name": "Pennsylvania",
+          "STATE_FIPS": 42
+        },
+        {
+          "KWHCOL": 980.2600598746466,
+          "state_name": "Rhode Island",
+          "STATE_FIPS": 44
+        },
+        {
+          "KWHCOL": 2879.2926975367045,
+          "state_name": "South Carolina",
+          "STATE_FIPS": 45
+        },
+        {
+          "KWHCOL": 1202.365269870134,
+          "state_name": "South Dakota",
+          "STATE_FIPS": 46
+        },
+        {
+          "KWHCOL": 2379.9493515634013,
+          "state_name": "Tennessee",
+          "STATE_FIPS": 47
+        },
+        {"KWHCOL": 3739.2859900185977, "state_name": "Texas", "STATE_FIPS": 48},
+        {"KWHCOL": 1642.9452944133195, "state_name": "Utah", "STATE_FIPS": 49},
+        {"KWHCOL": 472.02826998051, "state_name": "Vermont", "STATE_FIPS": 50},
+        {
+          "KWHCOL": 2070.382286297143,
+          "state_name": "Virginia",
+          "STATE_FIPS": 51
+        },
+        {
+          "KWHCOL": 469.33686597332337,
+          "state_name": "Washington",
+          "STATE_FIPS": 53
+        },
+        {
+          "KWHCOL": 1541.9792351351387,
+          "state_name": "West Virginia",
+          "STATE_FIPS": 54
+        },
+        {
+          "KWHCOL": 867.5883842535699,
+          "state_name": "Wisconsin",
+          "STATE_FIPS": 55
+        },
+        {"KWHCOL": 673.0668662357621, "state_name": "Wyoming", "STATE_FIPS": 56}
+      ]
     },
-    "padding": 5,
-    "legends": [
-      {
-        "title": "kWh/Household",
-        "fill": "color",
-        "gradientLength": {"signal": "clamp(height, 64, 200)"}
-      }
-    ],
-    "width": 350,
-    "background": "white",
-    "height": 250,
-    "style": "view"
-  }
+    {
+      "name": "source_0",
+      "url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json",
+      "format": {"type": "topojson", "feature": "states"},
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "source_1",
+          "fields": ["id"],
+          "key": "STATE_FIPS",
+          "values": ["KWHCOL", "state_name"]
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"KWHCOL\"]) && isFinite(+datum[\"KWHCOL\"])"
+        }
+      ]
+    },
+    {
+      "name": "source_0_color_domain_KWHCOL",
+      "source": "source_0",
+      "transform": [
+        {"type": "formula", "expr": "+datum['KWHCOL']", "as": "KWHCOL"},
+        {
+          "type": "aggregate",
+          "groupby": [],
+          "fields": ["KWHCOL", "KWHCOL"],
+          "ops": ["min", "max"],
+          "as": ["min", "max"]
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "shape",
+      "name": "marks",
+      "from": {"data": "source_0"},
+      "encode": {
+        "update": {
+          "fill": {"field": "KWHCOL", "scale": "color"},
+          "tooltip": {
+            "signal": "{\"State\": isValid(datum[\"state_name\"]) ? datum[\"state_name\"] : \"\"+datum[\"state_name\"], \"Avg kWh\": format(datum[\"KWHCOL\"], \".2f\")}"
+          },
+          "stroke": {"value": "white"}
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}],
+      "style": ["geoshape"]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "linear",
+      "domain": [
+        {"signal": "(data(\"source_0_color_domain_KWHCOL\")[0] || {}).min"},
+        {"signal": "(data(\"source_0_color_domain_KWHCOL\")[0] || {}).max"}
+      ],
+      "range": {"scheme": "purpleblue"},
+      "zero": false,
+      "interpolate": "hcl"
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "fit": {"signal": "data('source_0')"},
+      "size": {"signal": "[width, height]"},
+      "type": "albersUsa"
+    }
+  ],
+  "title": {
+    "text": "Annual Cooling Energy by State ",
+    "frame": "group",
+    "align": "center",
+    "fontSize": 15,
+    "fontWeight": "bold",
+    "color": "black"
+  },
+  "legends": [
+    {
+      "title": "kWh/Household",
+      "fill": "color",
+      "gradientLength": {"signal": "clamp(height, 64, 200)"}
+    }
+  ],
+  "padding": 5,
+  "height": 250,
+  "width": 350,
+  "background": "white",
+  "style": "view"
+}

@@ -5,17 +5,17 @@
       "name": "source_1",
       "values": [
         {"HDD65": 2101.999066397437, "state_name": "Alabama", "STATE_FIPS": 1},
-        {"HDD65": 10812.781552542732, "state_name": "Alaska", "STATE_FIPS": 2},
-        {"HDD65": 1399.1721314353488, "state_name": "Arizona", "STATE_FIPS": 4},
-        {"HDD65": 3154.286794217937, "state_name": "Arkansas", "STATE_FIPS": 5},
+        {"HDD65": 10887.967436166653, "state_name": "Alaska", "STATE_FIPS": 2},
+        {"HDD65": 1398.9927406967286, "state_name": "Arizona", "STATE_FIPS": 4},
+        {"HDD65": 3153.698618295415, "state_name": "Arkansas", "STATE_FIPS": 5},
         {
-          "HDD65": 1650.0485499585993,
+          "HDD65": 1653.0502225753232,
           "state_name": "California",
           "STATE_FIPS": 6
         },
-        {"HDD65": 5778.742737979143, "state_name": "Colorado", "STATE_FIPS": 8},
+        {"HDD65": 5781.226187477199, "state_name": "Colorado", "STATE_FIPS": 8},
         {
-          "HDD65": 5180.132226314734,
+          "HDD65": 5179.985345346612,
           "state_name": "Connecticut",
           "STATE_FIPS": 9
         },
@@ -25,54 +25,58 @@
           "STATE_FIPS": 10
         },
         {
-          "HDD65": 3633.4272830552377,
+          "HDD65": 3632.069096685502,
           "state_name": "District of Columbia",
           "STATE_FIPS": 11
         },
         {
-          "HDD65": 404.87623945422746,
+          "HDD65": 404.47143340971166,
           "state_name": "Florida",
           "STATE_FIPS": 12
         },
-        {"HDD65": 2259.614449270024, "state_name": "Georgia", "STATE_FIPS": 13},
-        {"HDD65": 6.737509661109087, "state_name": "Hawaii", "STATE_FIPS": 15},
-        {"HDD65": 6044.948615253981, "state_name": "Idaho", "STATE_FIPS": 16},
         {
-          "HDD65": 5582.0190605469725,
+          "HDD65": 2260.5595140194137,
+          "state_name": "Georgia",
+          "STATE_FIPS": 13
+        },
+        {"HDD65": 6.737509661109087, "state_name": "Hawaii", "STATE_FIPS": 15},
+        {"HDD65": 6066.2011512629215, "state_name": "Idaho", "STATE_FIPS": 16},
+        {
+          "HDD65": 5590.133907216275,
           "state_name": "Illinois",
           "STATE_FIPS": 17
         },
-        {"HDD65": 5171.933566206769, "state_name": "Indiana", "STATE_FIPS": 18},
-        {"HDD65": 6525.03538974114, "state_name": "Iowa", "STATE_FIPS": 19},
-        {"HDD65": 4707.957669534072, "state_name": "Kansas", "STATE_FIPS": 20},
+        {"HDD65": 5177.988324140659, "state_name": "Indiana", "STATE_FIPS": 18},
+        {"HDD65": 6527.454740759421, "state_name": "Iowa", "STATE_FIPS": 19},
+        {"HDD65": 4706.847113335222, "state_name": "Kansas", "STATE_FIPS": 20},
         {
-          "HDD65": 4088.9640041644852,
+          "HDD65": 4090.5751864626955,
           "state_name": "Kentucky",
           "STATE_FIPS": 21
         },
         {
-          "HDD65": 1221.6416861697917,
+          "HDD65": 1222.8511891685614,
           "state_name": "Louisiana",
           "STATE_FIPS": 22
         },
-        {"HDD65": 7044.051662614327, "state_name": "Maine", "STATE_FIPS": 23},
+        {"HDD65": 7043.798094879968, "state_name": "Maine", "STATE_FIPS": 23},
         {
-          "HDD65": 3960.5364352431507,
+          "HDD65": 3957.231740743163,
           "state_name": "Maryland",
           "STATE_FIPS": 24
         },
         {
-          "HDD65": 5613.797574087808,
+          "HDD65": 5620.653175970061,
           "state_name": "Massachusetts",
           "STATE_FIPS": 25
         },
         {
-          "HDD65": 6352.273402399448,
+          "HDD65": 6375.243283741018,
           "state_name": "Michigan",
           "STATE_FIPS": 26
         },
         {
-          "HDD65": 7735.650245636008,
+          "HDD65": 7749.197002851317,
           "state_name": "Minnesota",
           "STATE_FIPS": 27
         },
@@ -82,103 +86,103 @@
           "STATE_FIPS": 28
         },
         {
-          "HDD65": 4513.315696714623,
+          "HDD65": 4510.836541147944,
           "state_name": "Missouri",
           "STATE_FIPS": 29
         },
-        {"HDD65": 7289.449442491625, "state_name": "Montana", "STATE_FIPS": 30},
+        {"HDD65": 7296.731591003429, "state_name": "Montana", "STATE_FIPS": 30},
         {
-          "HDD65": 6048.854278655766,
+          "HDD65": 6046.7459901875445,
           "state_name": "Nebraska",
           "STATE_FIPS": 31
         },
-        {"HDD65": 2863.5109711159425, "state_name": "Nevada", "STATE_FIPS": 32},
+        {"HDD65": 2858.6274003556455, "state_name": "Nevada", "STATE_FIPS": 32},
         {
-          "HDD65": 6534.43856197813,
+          "HDD65": 6556.896181630866,
           "state_name": "New Hampshire",
           "STATE_FIPS": 33
         },
         {
-          "HDD65": 4509.195323983125,
+          "HDD65": 4513.053751608153,
           "state_name": "New Jersey",
           "STATE_FIPS": 34
         },
         {
-          "HDD65": 4096.109768067037,
+          "HDD65": 4102.983641352239,
           "state_name": "New Mexico",
           "STATE_FIPS": 35
         },
         {
-          "HDD65": 5103.535692123167,
+          "HDD65": 5112.2956119065275,
           "state_name": "New York",
           "STATE_FIPS": 36
         },
         {
-          "HDD65": 2843.500572669909,
+          "HDD65": 2842.337003829159,
           "state_name": "North Carolina",
           "STATE_FIPS": 37
         },
         {
-          "HDD65": 8593.820696195517,
+          "HDD65": 8599.954882187807,
           "state_name": "North Dakota",
           "STATE_FIPS": 38
         },
-        {"HDD65": 5222.612435115084, "state_name": "Ohio", "STATE_FIPS": 39},
+        {"HDD65": 5225.542623621707, "state_name": "Ohio", "STATE_FIPS": 39},
         {
-          "HDD65": 3267.1291130199875,
+          "HDD65": 3266.6539658509546,
           "state_name": "Oklahoma",
           "STATE_FIPS": 40
         },
-        {"HDD65": 4626.055006951166, "state_name": "Oregon", "STATE_FIPS": 41},
+        {"HDD65": 4631.17978908372, "state_name": "Oregon", "STATE_FIPS": 41},
         {
-          "HDD65": 5130.028730370816,
+          "HDD65": 5136.201828556702,
           "state_name": "Pennsylvania",
           "STATE_FIPS": 42
         },
         {
-          "HDD65": 5280.223519963975,
+          "HDD65": 5286.586956392627,
           "state_name": "Rhode Island",
           "STATE_FIPS": 44
         },
         {
-          "HDD65": 2153.1737601784753,
+          "HDD65": 2154.215390568253,
           "state_name": "South Carolina",
           "STATE_FIPS": 45
         },
         {
-          "HDD65": 7218.062145740335,
+          "HDD65": 7222.510443455772,
           "state_name": "South Dakota",
           "STATE_FIPS": 46
         },
         {
-          "HDD65": 3369.7677414712102,
+          "HDD65": 3368.9122880643454,
           "state_name": "Tennessee",
           "STATE_FIPS": 47
         },
-        {"HDD65": 1518.4681188428547, "state_name": "Texas", "STATE_FIPS": 48},
-        {"HDD65": 5393.6973830094375, "state_name": "Utah", "STATE_FIPS": 49},
-        {"HDD65": 7262.16058017328, "state_name": "Vermont", "STATE_FIPS": 50},
+        {"HDD65": 1521.2059010302878, "state_name": "Texas", "STATE_FIPS": 48},
+        {"HDD65": 5388.079565952603, "state_name": "Utah", "STATE_FIPS": 49},
+        {"HDD65": 7277.414428089003, "state_name": "Vermont", "STATE_FIPS": 50},
         {
-          "HDD65": 3622.002540345227,
+          "HDD65": 3624.892950695041,
           "state_name": "Virginia",
           "STATE_FIPS": 51
         },
         {
-          "HDD65": 4792.060671263033,
+          "HDD65": 4795.356652137574,
           "state_name": "Washington",
           "STATE_FIPS": 53
         },
         {
-          "HDD65": 4744.752645727484,
+          "HDD65": 4752.7780475867885,
           "state_name": "West Virginia",
           "STATE_FIPS": 54
         },
         {
-          "HDD65": 7180.82851152256,
+          "HDD65": 7194.617694911456,
           "state_name": "Wisconsin",
           "STATE_FIPS": 55
         },
-        {"HDD65": 7426.225650766756, "state_name": "Wyoming", "STATE_FIPS": 56}
+        {"HDD65": 7427.161218958697, "state_name": "Wyoming", "STATE_FIPS": 56}
       ]
     },
     {
@@ -190,8 +194,8 @@
           "type": "lookup",
           "from": "source_1",
           "fields": ["id"],
-          "values": ["HDD65", "state_name"],
-          "key": "STATE_FIPS"
+          "key": "STATE_FIPS",
+          "values": ["HDD65", "state_name"]
         },
         {
           "type": "filter",
@@ -221,11 +225,11 @@
       "from": {"data": "source_0"},
       "encode": {
         "update": {
-          "stroke": {"value": "white"},
-          "fill": {"field": "HDD65", "scale": "color"},
           "tooltip": {
             "signal": "{\"State\": isValid(datum[\"state_name\"]) ? datum[\"state_name\"] : \"\"+datum[\"state_name\"], \"Avg HDD\": format(datum[\"HDD65\"], \".2f\")}"
-          }
+          },
+          "fill": {"field": "HDD65", "scale": "color"},
+          "stroke": {"value": "white"}
         }
       },
       "transform": [{"type": "geoshape", "projection": "projection"}],
@@ -255,14 +259,12 @@
   ],
   "title": {
     "text": "Annual Heating Degree Days (HDD) by State",
-    "align": "center",
-    "fontSize": 15,
     "fontWeight": "bold",
+    "align": "center",
     "color": "black",
-    "frame": "group"
+    "frame": "group",
+    "fontSize": 15
   },
-  "width": 350,
-  "style": "view",
   "legends": [
     {
       "title": "HDD/Household",
@@ -270,7 +272,9 @@
       "gradientLength": {"signal": "clamp(height, 64, 200)"}
     }
   ],
-  "background": "white",
+  "height": 250,
   "padding": 5,
-  "height": 250
+  "width": 350,
+  "style": "view",
+  "background": "white"
 }

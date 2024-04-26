@@ -5,257 +5,257 @@
       "name": "source_1",
       "values": [
         {
-          "COMBOSPH": 5054.121632378813,
+          "COMBOSPH": 7708.951740078958,
           "state_name": "Alabama",
           "STATE_FIPS": 1
         },
         {
-          "COMBOSPH": 12753.753891505417,
+          "COMBOSPH": 19808.36106999495,
           "state_name": "Alaska",
           "STATE_FIPS": 2
         },
         {
-          "COMBOSPH": 2554.280949698204,
+          "COMBOSPH": 3461.2495908696797,
           "state_name": "Arizona",
           "STATE_FIPS": 4
         },
         {
-          "COMBOSPH": 7447.020172953438,
+          "COMBOSPH": 10689.054305713276,
           "state_name": "Arkansas",
           "STATE_FIPS": 5
         },
         {
-          "COMBOSPH": 3573.1212611432134,
+          "COMBOSPH": 3999.8189985352774,
           "state_name": "California",
           "STATE_FIPS": 6
         },
         {
-          "COMBOSPH": 11873.421300074542,
+          "COMBOSPH": 13442.540891766026,
           "state_name": "Colorado",
           "STATE_FIPS": 8
         },
         {
-          "COMBOSPH": 5773.143129066205,
+          "COMBOSPH": 14217.425038383892,
           "state_name": "Connecticut",
           "STATE_FIPS": 9
         },
         {
-          "COMBOSPH": 6839.984141727512,
+          "COMBOSPH": 10510.972365800555,
           "state_name": "Delaware",
           "STATE_FIPS": 10
         },
         {
-          "COMBOSPH": 4950.64723578801,
+          "COMBOSPH": 5981.378166432223,
           "state_name": "District of Columbia",
           "STATE_FIPS": 11
         },
         {
-          "COMBOSPH": 1132.6110191139544,
+          "COMBOSPH": 2175.5186750482712,
           "state_name": "Florida",
           "STATE_FIPS": 12
         },
         {
-          "COMBOSPH": 6381.219934665417,
+          "COMBOSPH": 8359.138343174067,
           "state_name": "Georgia",
           "STATE_FIPS": 13
         },
         {
-          "COMBOSPH": 19.736391718874223,
+          "COMBOSPH": 39.07605207066812,
           "state_name": "Hawaii",
           "STATE_FIPS": 15
         },
         {
-          "COMBOSPH": 10836.945664996034,
+          "COMBOSPH": 13682.978240052093,
           "state_name": "Idaho",
           "STATE_FIPS": 16
         },
         {
-          "COMBOSPH": 14885.447189377723,
+          "COMBOSPH": 17242.296571678027,
           "state_name": "Illinois",
           "STATE_FIPS": 17
         },
         {
-          "COMBOSPH": 12661.747894189673,
+          "COMBOSPH": 16298.200164697188,
           "state_name": "Indiana",
           "STATE_FIPS": 18
         },
         {
-          "COMBOSPH": 13021.701946056552,
+          "COMBOSPH": 17596.182570322824,
           "state_name": "Iowa",
           "STATE_FIPS": 19
         },
         {
-          "COMBOSPH": 11661.902852642543,
+          "COMBOSPH": 13717.993103213843,
           "state_name": "Kansas",
           "STATE_FIPS": 20
         },
         {
-          "COMBOSPH": 7991.4107241625325,
+          "COMBOSPH": 11474.708598520734,
           "state_name": "Kentucky",
           "STATE_FIPS": 21
         },
         {
-          "COMBOSPH": 3465.4661419862787,
+          "COMBOSPH": 4977.294465202316,
           "state_name": "Louisiana",
           "STATE_FIPS": 22
         },
         {
-          "COMBOSPH": 3220.281383527653,
+          "COMBOSPH": 14634.429800603086,
           "state_name": "Maine",
           "STATE_FIPS": 23
         },
         {
-          "COMBOSPH": 8044.184914144628,
+          "COMBOSPH": 11531.142365165952,
           "state_name": "Maryland",
           "STATE_FIPS": 24
         },
         {
-          "COMBOSPH": 8464.476195894264,
+          "COMBOSPH": 14114.377631334552,
           "state_name": "Massachusetts",
           "STATE_FIPS": 25
         },
         {
-          "COMBOSPH": 16083.450734053617,
+          "COMBOSPH": 19241.233871860095,
           "state_name": "Michigan",
           "STATE_FIPS": 26
         },
         {
-          "COMBOSPH": 13437.657699817102,
+          "COMBOSPH": 17881.07566844778,
           "state_name": "Minnesota",
           "STATE_FIPS": 27
         },
         {
-          "COMBOSPH": 5447.467438884993,
+          "COMBOSPH": 8525.335500412964,
           "state_name": "Mississippi",
           "STATE_FIPS": 28
         },
         {
-          "COMBOSPH": 11254.31205620539,
+          "COMBOSPH": 14410.483637014153,
           "state_name": "Missouri",
           "STATE_FIPS": 29
         },
         {
-          "COMBOSPH": 11058.737996876755,
+          "COMBOSPH": 14621.119936695042,
           "state_name": "Montana",
           "STATE_FIPS": 30
         },
         {
-          "COMBOSPH": 11742.367133985039,
+          "COMBOSPH": 14189.824301131694,
           "state_name": "Nebraska",
           "STATE_FIPS": 31
         },
         {
-          "COMBOSPH": 5545.555411876427,
+          "COMBOSPH": 6423.981385138819,
           "state_name": "Nevada",
           "STATE_FIPS": 32
         },
         {
-          "COMBOSPH": 3778.918457031864,
+          "COMBOSPH": 14873.01455855653,
           "state_name": "New Hampshire",
           "STATE_FIPS": 33
         },
         {
-          "COMBOSPH": 11818.663660538641,
+          "COMBOSPH": 14204.004306485736,
           "state_name": "New Jersey",
           "STATE_FIPS": 34
         },
         {
-          "COMBOSPH": 9082.602790182538,
+          "COMBOSPH": 10484.720669117973,
           "state_name": "New Mexico",
           "STATE_FIPS": 35
         },
         {
-          "COMBOSPH": 8225.432430430363,
+          "COMBOSPH": 12088.589105459112,
           "state_name": "New York",
           "STATE_FIPS": 36
         },
         {
-          "COMBOSPH": 5508.336123649775,
+          "COMBOSPH": 8322.41188954173,
           "state_name": "North Carolina",
           "STATE_FIPS": 37
         },
         {
-          "COMBOSPH": 11549.184830337213,
+          "COMBOSPH": 18029.809850015965,
           "state_name": "North Dakota",
           "STATE_FIPS": 38
         },
         {
-          "COMBOSPH": 12672.085702418137,
+          "COMBOSPH": 16017.408225839905,
           "state_name": "Ohio",
           "STATE_FIPS": 39
         },
         {
-          "COMBOSPH": 8477.251397246635,
+          "COMBOSPH": 11097.334800054301,
           "state_name": "Oklahoma",
           "STATE_FIPS": 40
         },
         {
-          "COMBOSPH": 7466.935215128939,
+          "COMBOSPH": 10026.177734230918,
           "state_name": "Oregon",
           "STATE_FIPS": 41
         },
         {
-          "COMBOSPH": 9430.137539617413,
+          "COMBOSPH": 14660.988323379366,
           "state_name": "Pennsylvania",
           "STATE_FIPS": 42
         },
         {
-          "COMBOSPH": 9656.887481703765,
+          "COMBOSPH": 16020.105703916312,
           "state_name": "Rhode Island",
           "STATE_FIPS": 44
         },
         {
-          "COMBOSPH": 4580.038485801016,
+          "COMBOSPH": 7007.551682947642,
           "state_name": "South Carolina",
           "STATE_FIPS": 45
         },
         {
-          "COMBOSPH": 10621.874937547256,
+          "COMBOSPH": 14882.239045923325,
           "state_name": "South Dakota",
           "STATE_FIPS": 46
         },
         {
-          "COMBOSPH": 6889.422570336506,
+          "COMBOSPH": 10021.481348531872,
           "state_name": "Tennessee",
           "STATE_FIPS": 47
         },
         {
-          "COMBOSPH": 4221.940923968713,
+          "COMBOSPH": 5875.019221299996,
           "state_name": "Texas",
           "STATE_FIPS": 48
         },
         {
-          "COMBOSPH": 11958.823605197838,
+          "COMBOSPH": 12637.839197404272,
           "state_name": "Utah",
           "STATE_FIPS": 49
         },
         {
-          "COMBOSPH": 3522.33247471062,
+          "COMBOSPH": 15024.847068643323,
           "state_name": "Vermont",
           "STATE_FIPS": 50
         },
         {
-          "COMBOSPH": 6398.299388257397,
+          "COMBOSPH": 9601.081641737881,
           "state_name": "Virginia",
           "STATE_FIPS": 51
         },
         {
-          "COMBOSPH": 8068.251495891891,
+          "COMBOSPH": 11337.589138033361,
           "state_name": "Washington",
           "STATE_FIPS": 53
         },
         {
-          "COMBOSPH": 10654.191346787102,
+          "COMBOSPH": 15537.783492703766,
           "state_name": "West Virginia",
           "STATE_FIPS": 54
         },
         {
-          "COMBOSPH": 12670.506464166112,
+          "COMBOSPH": 16002.83743012857,
           "state_name": "Wisconsin",
           "STATE_FIPS": 55
         },
         {
-          "COMBOSPH": 13497.003135387999,
+          "COMBOSPH": 16803.844557564043,
           "state_name": "Wyoming",
           "STATE_FIPS": 56
         }
@@ -270,8 +270,8 @@
           "type": "lookup",
           "from": "source_1",
           "fields": ["id"],
-          "values": ["COMBOSPH", "state_name"],
-          "key": "STATE_FIPS"
+          "key": "STATE_FIPS",
+          "values": ["COMBOSPH", "state_name"]
         },
         {
           "type": "filter",
@@ -301,11 +301,11 @@
       "from": {"data": "source_0"},
       "encode": {
         "update": {
-          "fill": {"field": "COMBOSPH", "scale": "color"},
-          "stroke": {"value": "white"},
           "tooltip": {
             "signal": "{\"State\": isValid(datum[\"state_name\"]) ? datum[\"state_name\"] : \"\"+datum[\"state_name\"], \"Avg kWh\": format(datum[\"COMBOSPH\"], \".2f\")}"
-          }
+          },
+          "fill": {"field": "COMBOSPH", "scale": "color"},
+          "stroke": {"value": "white"}
         }
       },
       "transform": [{"type": "geoshape", "projection": "projection"}],
@@ -328,29 +328,29 @@
   "projections": [
     {
       "name": "projection",
+      "type": "albersUsa",
       "size": {"signal": "[width, height]"},
-      "fit": {"signal": "data('source_0')"},
-      "type": "albersUsa"
+      "fit": {"signal": "data('source_0')"}
     }
   ],
   "title": {
     "text": "Annual Heating Energy by State ",
     "align": "center",
-    "fontWeight": "bold",
-    "fontSize": 15,
     "frame": "group",
-    "color": "black"
+    "color": "black",
+    "fontWeight": "bold",
+    "fontSize": 15
   },
-  "background": "white",
-  "padding": 5,
   "width": 350,
-  "style": "view",
   "height": 250,
+  "style": "view",
+  "padding": 5,
   "legends": [
     {
       "title": "kWh/Household",
       "fill": "color",
       "gradientLength": {"signal": "clamp(height, 64, 200)"}
     }
-  ]
+  ],
+  "background": "white"
 }
